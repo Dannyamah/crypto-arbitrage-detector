@@ -1,0 +1,2025 @@
+2025-09-28 16:30:59,925 - INFO - Tracking 50 tokens on 5 exchanges...
+2025-09-28 16:32:54,256 - INFO - Tracking 50 tokens on 5 exchanges...
+2025-09-28 16:32:54,256 - INFO - Refreshing top tokens and exchanges...
+2025-09-28 16:32:55,288 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getMe "HTTP/1.1 200 OK"
+2025-09-28 16:32:55,502 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/deleteWebhook "HTTP/1.1 200 OK"
+2025-09-28 16:32:55,510 - INFO - Application started
+2025-09-28 16:33:04,518 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 16:33:05,249 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 16:33:09,756 - INFO - 
+--- Aggregated Exchange Stats ---
+         exchange  last_price_mean  last_vol_mean  spread_mean  num_trades
+0         binance          3983.23   1.182287e+11         0.02          29
+1      bybit_spot          3985.36   1.915843e+10         0.03          29
+2  hotcoin_global          6419.84   4.029072e+06         0.08          18
+3             mxc          4278.73   1.743618e+08         0.06          27
+4          pionex         14267.16   4.060403e+08         0.03           8
+2025-09-28 16:33:09,859 - INFO - 
+--- Arbitrage Opportunities ---
+    token    buy_exchange  buy_price   sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0    AVNT         binance    1.40850      bybit_spot    1.416220            0.55                 5.48
+1   KAITO             mxc    1.43900         binance    1.461100            1.54                15.36
+2    BARD  hotcoin_global    0.98056      bybit_spot    0.992700            1.24                12.38
+3  ALPINE             mxc    5.36430         binance    5.403000            0.72                 7.21
+4    AEVO         binance    0.11980          pionex    0.120400            0.50                 5.01
+5   ASTER             mxc    1.80170  hotcoin_global    1.811500            0.54                 5.44
+6    APEX      bybit_spot    2.12020             mxc    2.150000            1.41                14.06
+7       H             mxc    0.07718      bybit_spot    0.078678            1.94                19.41
+2025-09-28 16:33:09,859 - INFO - Sending Telegram message:
+Arbitrage Opportunities Found!
+
+Token: AVNT
+Buy: binance @ 1.408500 USDT
+Sell: bybit_spot @ 1.416220 USDT
+Price Diff: 0.55%
+Profit/$1000: 5.48 USDT
+
+Token: KAITO
+Buy: mxc @ 1.439000 USDT
+Sell: binance @ 1.461100 USDT
+Price Diff: 1.54%
+Profit/$1000: 15.36 USDT
+
+Token: BARD
+Buy: hotcoin_global @ 0.980560 USDT
+Sell: bybit_spot @ 0.992700 USDT
+Price Diff: 1.24%
+Profit/$1000: 12.38 USDT
+
+Token: ALPINE
+Buy: mxc @ 5.364300 USDT
+Sell: binance @ 5.403000 USDT
+Price Diff: 0.72%
+Profit/$1000: 7.21 USDT
+
+Token: AEVO
+Buy: binance @ 0.119800 USDT
+Sell: pionex @ 0.120400 USDT
+Price Diff: 0.50%
+Profit/$1000: 5.01 USDT
+
+Token: ASTER
+Buy: mxc @ 1.801700 USDT
+Sell: hotcoin_global @ 1.811500 USDT
+Price Diff: 0.54%
+Profit/$1000: 5.44 USDT
+
+Token: APEX
+Buy: bybit_spot @ 2.120200 USDT
+Sell: mxc @ 2.150000 USDT
+Price Diff: 1.41%
+Profit/$1000: 14.06 USDT
+
+Token: H
+Buy: mxc @ 0.077180 USDT
+Sell: bybit_spot @ 0.078678 USDT
+Price Diff: 1.94%
+Profit/$1000: 19.41 USDT
+
+
+2025-09-28 16:33:10,478 - INFO - Telegram message sent successfully.
+2025-09-28 16:33:10,478 - INFO - Waiting 60 seconds before next update...
+2025-09-28 16:33:14,728 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 16:33:24,886 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 16:33:28,404 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 16:33:31,253 - INFO - 
+--- Arbitrage Opportunities ---
+    token    buy_exchange  buy_price   sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0    AVNT         binance    1.40850      bybit_spot    1.416220            0.55                 5.48
+1   KAITO             mxc    1.43900         binance    1.461100            1.54                15.36
+2    BARD  hotcoin_global    0.98056      bybit_spot    0.992700            1.24                12.38
+3  ALPINE             mxc    5.36430         binance    5.403000            0.72                 7.21
+4    AEVO         binance    0.11980          pionex    0.120400            0.50                 5.01
+5   ASTER             mxc    1.80170  hotcoin_global    1.811500            0.54                 5.44
+6    APEX      bybit_spot    2.12020             mxc    2.150000            1.41                14.06
+7       H             mxc    0.07718      bybit_spot    0.078678            1.94                19.41
+2025-09-28 16:33:31,253 - INFO - Sending Telegram message:
+Arbitrage Opportunities Found!
+
+Token: AVNT
+Buy: binance @ 1.408500 USDT
+Sell: bybit_spot @ 1.416220 USDT
+Price Diff: 0.55%
+Profit/$1000: 5.48 USDT
+
+Token: KAITO
+Buy: mxc @ 1.439000 USDT
+Sell: binance @ 1.461100 USDT
+Price Diff: 1.54%
+Profit/$1000: 15.36 USDT
+
+Token: BARD
+Buy: hotcoin_global @ 0.980560 USDT
+Sell: bybit_spot @ 0.992700 USDT
+Price Diff: 1.24%
+Profit/$1000: 12.38 USDT
+
+Token: ALPINE
+Buy: mxc @ 5.364300 USDT
+Sell: binance @ 5.403000 USDT
+Price Diff: 0.72%
+Profit/$1000: 7.21 USDT
+
+Token: AEVO
+Buy: binance @ 0.119800 USDT
+Sell: pionex @ 0.120400 USDT
+Price Diff: 0.50%
+Profit/$1000: 5.01 USDT
+
+Token: ASTER
+Buy: mxc @ 1.801700 USDT
+Sell: hotcoin_global @ 1.811500 USDT
+Price Diff: 0.54%
+Profit/$1000: 5.44 USDT
+
+Token: APEX
+Buy: bybit_spot @ 2.120200 USDT
+Sell: mxc @ 2.150000 USDT
+Price Diff: 1.41%
+Profit/$1000: 14.06 USDT
+
+Token: H
+Buy: mxc @ 0.077180 USDT
+Sell: bybit_spot @ 0.078678 USDT
+Price Diff: 1.94%
+Profit/$1000: 19.41 USDT
+
+
+2025-09-28 16:33:31,449 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 16:33:31,893 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 16:33:32,180 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-09-29 11:58:58,909 - INFO - Tracking 50 tokens on 5 exchanges...
+2025-09-29 11:58:58,914 - INFO - Refreshing top tokens and exchanges...
+2025-09-29 11:59:02,546 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getMe "HTTP/1.1 200 OK"
+2025-09-29 11:59:02,826 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/deleteWebhook "HTTP/1.1 200 OK"
+2025-09-29 11:59:02,826 - INFO - Application started
+2025-09-29 11:59:03,468 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 11:59:03,775 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-09-29 11:59:13,682 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 11:59:17,453 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 11:59:18,569 - INFO - 
+--- Aggregated Exchange Stats ---
+         exchange  last_price_mean  last_vol_mean  spread_mean  num_trades
+0         binance          4232.34   9.621915e+08         0.02          28
+1      bybit_spot          3952.27   1.911687e+10         0.02          30
+2  hotcoin_global          6968.18   4.348404e+10         0.08          17
+3             mxc          4231.02   2.886973e+10         0.03          28
+4          pionex         13005.19   1.017958e+08         0.02           9
+2025-09-29 11:59:18,685 - INFO - 
+--- Arbitrage Opportunities ---
+   token buy_exchange  buy_price sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0   FORM          mxc     1.1385       binance      1.1426            0.36                 3.60
+1  KAITO      binance     1.2869           mxc      1.2919            0.39                 3.89
+2  ASTER   bybit_spot     1.9087           mxc      1.9157            0.37                 3.67
+2025-09-29 11:59:18,692 - INFO - Sending Telegram message:
+Arbitrage Opportunities Found!
+
+Token: FORM
+Buy: mxc @ 1.138500 USDT
+Sell: binance @ 1.142600 USDT
+Price Diff: 0.36%
+Profit/$1000: 3.60 USDT
+
+Token: KAITO
+Buy: binance @ 1.286900 USDT
+Sell: mxc @ 1.291900 USDT
+Price Diff: 0.39%
+Profit/$1000: 3.89 USDT
+
+Token: ASTER
+Buy: bybit_spot @ 1.908700 USDT
+Sell: mxc @ 1.915700 USDT
+Price Diff: 0.37%
+Profit/$1000: 3.67 USDT
+
+
+2025-09-29 11:59:19,327 - INFO - Telegram message sent successfully.
+2025-09-29 11:59:19,327 - INFO - Waiting 60 seconds before next update...
+2025-09-29 11:59:20,498 - INFO - 
+--- Arbitrage Opportunities ---
+   token buy_exchange  buy_price sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0   FORM          mxc     1.1385       binance      1.1426            0.36                 3.60
+1  KAITO      binance     1.2869           mxc      1.2919            0.39                 3.89
+2  ASTER   bybit_spot     1.9087           mxc      1.9157            0.37                 3.67
+2025-09-29 11:59:20,505 - INFO - Sending Telegram message:
+Arbitrage Opportunities Found!
+
+Token: FORM
+Buy: mxc @ 1.138500 USDT
+Sell: binance @ 1.142600 USDT
+Price Diff: 0.36%
+Profit/$1000: 3.60 USDT
+
+Token: KAITO
+Buy: binance @ 1.286900 USDT
+Sell: mxc @ 1.291900 USDT
+Price Diff: 0.39%
+Profit/$1000: 3.89 USDT
+
+Token: ASTER
+Buy: bybit_spot @ 1.908700 USDT
+Sell: mxc @ 1.915700 USDT
+Price Diff: 0.37%
+Profit/$1000: 3.67 USDT
+
+
+2025-09-29 11:59:21,137 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-09-29 11:59:34,423 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 11:59:45,882 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 11:59:46,085 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 11:59:46,709 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-09-29 11:59:59,428 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:00:10,705 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:00:19,343 - INFO - Arbitrage scan stopped via /stop command.
+2025-09-29 12:44:09,621 - INFO - Tracking 50 tokens on 5 exchanges...
+2025-09-29 12:44:09,621 - INFO - Refreshing top tokens and exchanges...
+2025-09-29 12:44:10,515 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getMe "HTTP/1.1 200 OK"
+2025-09-29 12:44:10,684 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/deleteWebhook "HTTP/1.1 200 OK"
+2025-09-29 12:44:10,690 - INFO - Application started
+2025-09-29 12:44:11,172 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:44:11,381 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-09-29 12:44:19,491 - INFO - 
+--- Aggregated Exchange Stats ---
+         exchange  last_price_mean  last_vol_mean  spread_mean  num_trades
+0         binance          4081.92   9.859186e+08         0.02          29
+1      bybit_spot          3929.94   1.958436e+10         0.03          30
+2  hotcoin_global          6228.67   9.265948e+06         0.08          19
+3             mxc          4226.63   2.980338e+10         0.03          28
+4          pionex         14617.25   1.133310e+08         0.02           8
+2025-09-29 12:44:19,605 - INFO - 
+--- Arbitrage Opportunities ---
+   token    buy_exchange  buy_price sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0    XPL      bybit_spot   1.288100           mxc    1.292500            0.34                 3.42
+1    ZKC      bybit_spot   0.536700           mxc    0.539000            0.43                 4.29
+2   AVNT      bybit_spot   1.276720       binance    1.281600            0.38                 3.82
+3   PUMP             mxc   0.005574       binance    0.005598            0.43                 4.31
+4   MIRA         binance   0.924800           mxc    0.927600            0.30                 3.03
+5   AVAX          pionex  29.640000    bybit_spot   29.880000            0.81                 8.10
+6   BARD      bybit_spot   0.911900           mxc    0.916000            0.45                 4.50
+7  ASTER  hotcoin_global   1.877500           mxc    1.894200            0.89                 8.89
+2025-09-29 12:44:19,605 - INFO - Sending Telegram message:
+Arbitrage Opportunities Found!
+
+Token: XPL
+Buy: bybit_spot @ 1.288100 USDT
+Sell: mxc @ 1.292500 USDT
+Price Diff: 0.34%
+Profit/$1000: 3.42 USDT
+
+Token: ZKC
+Buy: bybit_spot @ 0.536700 USDT
+Sell: mxc @ 0.539000 USDT
+Price Diff: 0.43%
+Profit/$1000: 4.29 USDT
+
+Token: AVNT
+Buy: bybit_spot @ 1.276720 USDT
+Sell: binance @ 1.281600 USDT
+Price Diff: 0.38%
+Profit/$1000: 3.82 USDT
+
+Token: PUMP
+Buy: mxc @ 0.005574 USDT
+Sell: binance @ 0.005598 USDT
+Price Diff: 0.43%
+Profit/$1000: 4.31 USDT
+
+Token: MIRA
+Buy: binance @ 0.924800 USDT
+Sell: mxc @ 0.927600 USDT
+Price Diff: 0.30%
+Profit/$1000: 3.03 USDT
+
+Token: AVAX
+Buy: pionex @ 29.640000 USDT
+Sell: bybit_spot @ 29.880000 USDT
+Price Diff: 0.81%
+Profit/$1000: 8.10 USDT
+
+Token: BARD
+Buy: bybit_spot @ 0.911900 USDT
+Sell: mxc @ 0.916000 USDT
+Price Diff: 0.45%
+Profit/$1000: 4.50 USDT
+
+Token: ASTER
+Buy: hotcoin_global @ 1.877500 USDT
+Sell: mxc @ 1.894200 USDT
+Price Diff: 0.89%
+Profit/$1000: 8.89 USDT
+
+
+2025-09-29 12:44:19,613 - INFO - Waiting 60 seconds before next update...
+2025-09-29 12:44:21,484 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:44:32,398 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:44:32,581 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:44:32,689 - INFO - 
+--- Arbitrage Opportunities ---
+   token    buy_exchange  buy_price sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0    XPL      bybit_spot   1.288100           mxc    1.292500            0.34                 3.42
+1    ZKC      bybit_spot   0.536700           mxc    0.539000            0.43                 4.29
+2   AVNT      bybit_spot   1.276720       binance    1.281600            0.38                 3.82
+3   PUMP             mxc   0.005574       binance    0.005598            0.43                 4.31
+4   MIRA         binance   0.924800           mxc    0.927600            0.30                 3.03
+5   AVAX          pionex  29.640000    bybit_spot   29.880000            0.81                 8.10
+6   BARD      bybit_spot   0.911900           mxc    0.916000            0.45                 4.50
+7  ASTER  hotcoin_global   1.877500           mxc    1.894200            0.89                 8.89
+2025-09-29 12:44:32,689 - INFO - Sending Telegram message:
+Arbitrage Opportunities Found!
+
+Token: XPL
+Buy: bybit_spot @ 1.288100 USDT
+Sell: mxc @ 1.292500 USDT
+Price Diff: 0.34%
+Profit/$1000: 3.42 USDT
+
+Token: ZKC
+Buy: bybit_spot @ 0.536700 USDT
+Sell: mxc @ 0.539000 USDT
+Price Diff: 0.43%
+Profit/$1000: 4.29 USDT
+
+Token: AVNT
+Buy: bybit_spot @ 1.276720 USDT
+Sell: binance @ 1.281600 USDT
+Price Diff: 0.38%
+Profit/$1000: 3.82 USDT
+
+Token: PUMP
+Buy: mxc @ 0.005574 USDT
+Sell: binance @ 0.005598 USDT
+Price Diff: 0.43%
+Profit/$1000: 4.31 USDT
+
+Token: MIRA
+Buy: binance @ 0.924800 USDT
+Sell: mxc @ 0.927600 USDT
+Price Diff: 0.30%
+Profit/$1000: 3.03 USDT
+
+Token: AVAX
+Buy: pionex @ 29.640000 USDT
+Sell: bybit_spot @ 29.880000 USDT
+Price Diff: 0.81%
+Profit/$1000: 8.10 USDT
+
+Token: BARD
+Buy: bybit_spot @ 0.911900 USDT
+Sell: mxc @ 0.916000 USDT
+Price Diff: 0.45%
+Profit/$1000: 4.50 USDT
+
+Token: ASTER
+Buy: hotcoin_global @ 1.877500 USDT
+Sell: mxc @ 1.894200 USDT
+Price Diff: 0.89%
+Profit/$1000: 8.89 USDT
+
+
+2025-09-29 12:44:33,469 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-09-29 12:44:42,874 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:44:51,422 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:44:52,211 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-09-29 12:45:01,618 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:45:11,879 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:45:19,625 - INFO - Arbitrage scan stopped via /stop command.
+2025-09-29 12:45:42,950 - INFO - Tracking 50 tokens on 5 exchanges...
+2025-09-29 12:45:42,950 - INFO - Refreshing top tokens and exchanges...
+2025-09-29 12:45:43,818 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getMe "HTTP/1.1 200 OK"
+2025-09-29 12:45:44,012 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/deleteWebhook "HTTP/1.1 200 OK"
+2025-09-29 12:45:44,012 - INFO - Application started
+2025-09-29 12:45:44,562 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:45:44,882 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-09-29 12:45:47,721 - INFO - 
+--- Aggregated Exchange Stats ---
+         exchange  last_price_mean  last_vol_mean  spread_mean  num_trades
+0         binance          4081.92   9.859186e+08         0.02          29
+1      bybit_spot          3929.94   1.958436e+10         0.03          30
+2  hotcoin_global          6228.67   9.265948e+06         0.08          19
+3             mxc          4226.63   2.980338e+10         0.03          28
+4          pionex         14617.25   1.133310e+08         0.02           8
+2025-09-29 12:45:47,836 - INFO - 
+--- Arbitrage Opportunities ---
+   token    buy_exchange  buy_price sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0    XPL      bybit_spot   1.288100           mxc    1.292500            0.34                 3.42
+1    ZKC      bybit_spot   0.536700           mxc    0.539000            0.43                 4.29
+2   AVNT      bybit_spot   1.276720       binance    1.281600            0.38                 3.82
+3   PUMP             mxc   0.005574       binance    0.005598            0.43                 4.31
+4   MIRA         binance   0.924800           mxc    0.927600            0.30                 3.03
+5   AVAX          pionex  29.640000    bybit_spot   29.880000            0.81                 8.10
+6   BARD      bybit_spot   0.911900           mxc    0.916000            0.45                 4.50
+7  ASTER  hotcoin_global   1.877500           mxc    1.894200            0.89                 8.89
+2025-09-29 12:45:47,839 - INFO - Sending Telegram message:
+Arbitrage Opportunities Found!
+
+Token: XPL
+Buy: bybit_spot @ 1.288100 USDT
+Sell: mxc @ 1.292500 USDT
+Price Diff: 0.34%
+Profit/$1000: 3.42 USDT
+
+Token: ZKC
+Buy: bybit_spot @ 0.536700 USDT
+Sell: mxc @ 0.539000 USDT
+Price Diff: 0.43%
+Profit/$1000: 4.29 USDT
+
+Token: AVNT
+Buy: bybit_spot @ 1.276720 USDT
+Sell: binance @ 1.281600 USDT
+Price Diff: 0.38%
+Profit/$1000: 3.82 USDT
+
+Token: PUMP
+Buy: mxc @ 0.005574 USDT
+Sell: binance @ 0.005598 USDT
+Price Diff: 0.43%
+Profit/$1000: 4.31 USDT
+
+Token: MIRA
+Buy: binance @ 0.924800 USDT
+Sell: mxc @ 0.927600 USDT
+Price Diff: 0.30%
+Profit/$1000: 3.03 USDT
+
+Token: AVAX
+Buy: pionex @ 29.640000 USDT
+Sell: bybit_spot @ 29.880000 USDT
+Price Diff: 0.81%
+Profit/$1000: 8.10 USDT
+
+Token: BARD
+Buy: bybit_spot @ 0.911900 USDT
+Sell: mxc @ 0.916000 USDT
+Price Diff: 0.45%
+Profit/$1000: 4.50 USDT
+
+Token: ASTER
+Buy: hotcoin_global @ 1.877500 USDT
+Sell: mxc @ 1.894200 USDT
+Price Diff: 0.89%
+Profit/$1000: 8.89 USDT
+
+
+2025-09-29 12:45:47,839 - INFO - Waiting 60 seconds before next update...
+2025-09-29 12:45:54,784 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:45:59,877 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:46:00,760 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-09-29 12:46:10,888 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:46:21,958 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:46:32,135 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:46:42,904 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:46:53,092 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:46:53,962 - INFO - 
+--- Aggregated Exchange Stats ---
+         exchange  last_price_mean  last_vol_mean  spread_mean  num_trades
+0         binance          4229.47   9.696729e+08         0.02          28
+1      bybit_spot          4065.57   2.025405e+10         0.03          29
+2  hotcoin_global          6230.85   9.265968e+06         0.08          19
+3             mxc          4228.95   2.980369e+10         0.03          28
+4          pionex         14623.82   1.133310e+08         0.02           8
+2025-09-29 12:46:54,044 - INFO - 
+--- Arbitrage Opportunities ---
+   token    buy_exchange  buy_price sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0    XPL      bybit_spot    1.28810           mxc      1.2925            0.34                 3.42
+1    ZKC      bybit_spot    0.53670           mxc      0.5390            0.43                 4.29
+2   AVNT      bybit_spot    1.27672       binance      1.2833            0.52                 5.15
+3   AVAX          pionex   29.64000    bybit_spot     29.8800            0.81                 8.10
+4   MIRA         binance    0.92180           mxc      0.9276            0.63                 6.29
+5   BARD      bybit_spot    0.91190           mxc      0.9160            0.45                 4.50
+6  ASTER  hotcoin_global    1.87750           mxc      1.8942            0.89                 8.89
+2025-09-29 12:46:54,052 - INFO - Sending Telegram message:
+Arbitrage Opportunities Found!
+
+Token: XPL
+Buy: bybit_spot @ 1.288100 USDT
+Sell: mxc @ 1.292500 USDT
+Price Diff: 0.34%
+Profit/$1000: 3.42 USDT
+
+Token: ZKC
+Buy: bybit_spot @ 0.536700 USDT
+Sell: mxc @ 0.539000 USDT
+Price Diff: 0.43%
+Profit/$1000: 4.29 USDT
+
+Token: AVNT
+Buy: bybit_spot @ 1.276720 USDT
+Sell: binance @ 1.283300 USDT
+Price Diff: 0.52%
+Profit/$1000: 5.15 USDT
+
+Token: AVAX
+Buy: pionex @ 29.640000 USDT
+Sell: bybit_spot @ 29.880000 USDT
+Price Diff: 0.81%
+Profit/$1000: 8.10 USDT
+
+Token: MIRA
+Buy: binance @ 0.921800 USDT
+Sell: mxc @ 0.927600 USDT
+Price Diff: 0.63%
+Profit/$1000: 6.29 USDT
+
+Token: BARD
+Buy: bybit_spot @ 0.911900 USDT
+Sell: mxc @ 0.916000 USDT
+Price Diff: 0.45%
+Profit/$1000: 4.50 USDT
+
+Token: ASTER
+Buy: hotcoin_global @ 1.877500 USDT
+Sell: mxc @ 1.894200 USDT
+Price Diff: 0.89%
+Profit/$1000: 8.89 USDT
+
+
+2025-09-29 12:46:54,692 - INFO - Telegram message sent to 6551264734 successfully.
+2025-09-29 12:46:54,699 - INFO - Waiting 60 seconds before next update...
+2025-09-29 12:47:03,279 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:47:13,474 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:47:17,383 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:47:17,952 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-09-29 12:47:22,500 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:47:22,720 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-09-29 12:47:28,081 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:47:28,190 - INFO - 
+--- Arbitrage Opportunities ---
+   token    buy_exchange  buy_price sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0    XPL      bybit_spot    1.28810           mxc      1.2925            0.34                 3.42
+1    ZKC      bybit_spot    0.53670           mxc      0.5390            0.43                 4.29
+2   AVNT      bybit_spot    1.27672       binance      1.2833            0.52                 5.15
+3   AVAX          pionex   29.64000    bybit_spot     29.8800            0.81                 8.10
+4   MIRA         binance    0.92180           mxc      0.9276            0.63                 6.29
+5   BARD      bybit_spot    0.91190           mxc      0.9160            0.45                 4.50
+6  ASTER  hotcoin_global    1.87750           mxc      1.8942            0.89                 8.89
+2025-09-29 12:47:28,190 - INFO - Sending Telegram message:
+Arbitrage Opportunities Found!
+
+Token: XPL
+Buy: bybit_spot @ 1.288100 USDT
+Sell: mxc @ 1.292500 USDT
+Price Diff: 0.34%
+Profit/$1000: 3.42 USDT
+
+Token: ZKC
+Buy: bybit_spot @ 0.536700 USDT
+Sell: mxc @ 0.539000 USDT
+Price Diff: 0.43%
+Profit/$1000: 4.29 USDT
+
+Token: AVNT
+Buy: bybit_spot @ 1.276720 USDT
+Sell: binance @ 1.283300 USDT
+Price Diff: 0.52%
+Profit/$1000: 5.15 USDT
+
+Token: AVAX
+Buy: pionex @ 29.640000 USDT
+Sell: bybit_spot @ 29.880000 USDT
+Price Diff: 0.81%
+Profit/$1000: 8.10 USDT
+
+Token: MIRA
+Buy: binance @ 0.921800 USDT
+Sell: mxc @ 0.927600 USDT
+Price Diff: 0.63%
+Profit/$1000: 6.29 USDT
+
+Token: BARD
+Buy: bybit_spot @ 0.911900 USDT
+Sell: mxc @ 0.916000 USDT
+Price Diff: 0.45%
+Profit/$1000: 4.50 USDT
+
+Token: ASTER
+Buy: hotcoin_global @ 1.877500 USDT
+Sell: mxc @ 1.894200 USDT
+Price Diff: 0.89%
+Profit/$1000: 8.89 USDT
+
+
+2025-09-29 12:47:28,850 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-09-29 12:47:38,386 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:47:48,572 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:47:57,499 - INFO - 
+--- Aggregated Exchange Stats ---
+         exchange  last_price_mean  last_vol_mean  spread_mean  num_trades
+0         binance          4229.47   9.696729e+08         0.02          28
+1      bybit_spot          4065.57   2.025405e+10         0.03          29
+2  hotcoin_global          6230.85   9.265968e+06         0.08          19
+3             mxc          4228.95   2.980369e+10         0.03          28
+4          pionex         14623.82   1.133310e+08         0.02           8
+2025-09-29 12:47:57,563 - INFO - 
+--- Arbitrage Opportunities ---
+   token    buy_exchange  buy_price sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0    XPL      bybit_spot    1.28810           mxc      1.2925            0.34                 3.42
+1    ZKC      bybit_spot    0.53670           mxc      0.5390            0.43                 4.29
+2   AVNT      bybit_spot    1.27672       binance      1.2833            0.52                 5.15
+3   AVAX          pionex   29.64000    bybit_spot     29.8800            0.81                 8.10
+4   MIRA         binance    0.92180           mxc      0.9276            0.63                 6.29
+5   BARD      bybit_spot    0.91190           mxc      0.9160            0.45                 4.50
+6  ASTER  hotcoin_global    1.87750           mxc      1.8942            0.89                 8.89
+2025-09-29 12:47:57,566 - INFO - Sending Telegram message:
+Arbitrage Opportunities Found!
+
+Token: XPL
+Buy: bybit_spot @ 1.288100 USDT
+Sell: mxc @ 1.292500 USDT
+Price Diff: 0.34%
+Profit/$1000: 3.42 USDT
+
+Token: ZKC
+Buy: bybit_spot @ 0.536700 USDT
+Sell: mxc @ 0.539000 USDT
+Price Diff: 0.43%
+Profit/$1000: 4.29 USDT
+
+Token: AVNT
+Buy: bybit_spot @ 1.276720 USDT
+Sell: binance @ 1.283300 USDT
+Price Diff: 0.52%
+Profit/$1000: 5.15 USDT
+
+Token: AVAX
+Buy: pionex @ 29.640000 USDT
+Sell: bybit_spot @ 29.880000 USDT
+Price Diff: 0.81%
+Profit/$1000: 8.10 USDT
+
+Token: MIRA
+Buy: binance @ 0.921800 USDT
+Sell: mxc @ 0.927600 USDT
+Price Diff: 0.63%
+Profit/$1000: 6.29 USDT
+
+Token: BARD
+Buy: bybit_spot @ 0.911900 USDT
+Sell: mxc @ 0.916000 USDT
+Price Diff: 0.45%
+Profit/$1000: 4.50 USDT
+
+Token: ASTER
+Buy: hotcoin_global @ 1.877500 USDT
+Sell: mxc @ 1.894200 USDT
+Price Diff: 0.89%
+Profit/$1000: 8.89 USDT
+
+
+2025-09-29 12:47:58,164 - INFO - Telegram message sent to 7461844128 successfully.
+2025-09-29 12:47:58,750 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:47:58,783 - INFO - Telegram message sent to 6551264734 successfully.
+2025-09-29 12:47:58,787 - INFO - Waiting 60 seconds before next update...
+2025-09-29 12:48:09,280 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:48:19,471 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:48:30,413 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:48:40,598 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:48:50,794 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:49:01,418 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:49:08,202 - INFO - 
+--- Aggregated Exchange Stats ---
+         exchange  last_price_mean  last_vol_mean  spread_mean  num_trades
+0         binance          4082.64   9.852177e+08         0.02          29
+1      bybit_spot          4065.30   2.026791e+10         0.03          29
+2  hotcoin_global          6230.72   9.265987e+06         0.08          19
+3             mxc          4228.07   2.980369e+10         0.03          28
+4          pionex         14621.10   1.133310e+08         0.02           8
+2025-09-29 12:49:08,301 - INFO - 
+--- Arbitrage Opportunities ---
+   token    buy_exchange  buy_price sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0    ZKC      bybit_spot     0.5332           mxc      0.5390            1.09                10.88
+1   AVAX          pionex    29.6400           mxc     29.8300            0.64                 6.41
+2   BARD      bybit_spot     0.9117           mxc      0.9160            0.47                 4.72
+3   MIRA         binance     0.9208           mxc      0.9276            0.74                 7.38
+4  ASTER  hotcoin_global     1.8775           mxc      1.8942            0.89                 8.89
+2025-09-29 12:49:08,310 - INFO - Sending Telegram message:
+Arbitrage Opportunities Found!
+
+Token: ZKC
+Buy: bybit_spot @ 0.533200 USDT
+Sell: mxc @ 0.539000 USDT
+Price Diff: 1.09%
+Profit/$1000: 10.88 USDT
+
+Token: AVAX
+Buy: pionex @ 29.640000 USDT
+Sell: mxc @ 29.830000 USDT
+Price Diff: 0.64%
+Profit/$1000: 6.41 USDT
+
+Token: BARD
+Buy: bybit_spot @ 0.911700 USDT
+Sell: mxc @ 0.916000 USDT
+Price Diff: 0.47%
+Profit/$1000: 4.72 USDT
+
+Token: MIRA
+Buy: binance @ 0.920800 USDT
+Sell: mxc @ 0.927600 USDT
+Price Diff: 0.74%
+Profit/$1000: 7.38 USDT
+
+Token: ASTER
+Buy: hotcoin_global @ 1.877500 USDT
+Sell: mxc @ 1.894200 USDT
+Price Diff: 0.89%
+Profit/$1000: 8.89 USDT
+
+
+2025-09-29 12:49:08,915 - INFO - Telegram message sent to 7461844128 successfully.
+2025-09-29 12:49:09,508 - INFO - Telegram message sent to 6551264734 successfully.
+2025-09-29 12:49:09,515 - INFO - Waiting 60 seconds before next update...
+2025-09-29 12:49:11,594 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:49:21,873 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:49:32,407 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:49:42,595 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:49:52,785 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:50:05,331 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:50:15,158 - INFO - 
+--- Aggregated Exchange Stats ---
+         exchange  last_price_mean  last_vol_mean  spread_mean  num_trades
+0         binance          4082.64   9.852177e+08         0.02          29
+1      bybit_spot          4065.30   2.026791e+10         0.03          29
+2  hotcoin_global          6230.72   9.265987e+06         0.08          19
+3             mxc          4228.07   2.980369e+10         0.03          28
+4          pionex         14621.10   1.133310e+08         0.02           8
+2025-09-29 12:50:15,265 - INFO - 
+--- Arbitrage Opportunities ---
+   token    buy_exchange  buy_price sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0    ZKC      bybit_spot     0.5332           mxc      0.5390            1.09                10.88
+1   AVAX          pionex    29.6400           mxc     29.8300            0.64                 6.41
+2   BARD      bybit_spot     0.9117           mxc      0.9160            0.47                 4.72
+3   MIRA         binance     0.9208           mxc      0.9276            0.74                 7.38
+4  ASTER  hotcoin_global     1.8775           mxc      1.8942            0.89                 8.89
+2025-09-29 12:50:15,273 - INFO - Sending Telegram message:
+Arbitrage Opportunities Found!
+
+Token: ZKC
+Buy: bybit_spot @ 0.533200 USDT
+Sell: mxc @ 0.539000 USDT
+Price Diff: 1.09%
+Profit/$1000: 10.88 USDT
+
+Token: AVAX
+Buy: pionex @ 29.640000 USDT
+Sell: mxc @ 29.830000 USDT
+Price Diff: 0.64%
+Profit/$1000: 6.41 USDT
+
+Token: BARD
+Buy: bybit_spot @ 0.911700 USDT
+Sell: mxc @ 0.916000 USDT
+Price Diff: 0.47%
+Profit/$1000: 4.72 USDT
+
+Token: MIRA
+Buy: binance @ 0.920800 USDT
+Sell: mxc @ 0.927600 USDT
+Price Diff: 0.74%
+Profit/$1000: 7.38 USDT
+
+Token: ASTER
+Buy: hotcoin_global @ 1.877500 USDT
+Sell: mxc @ 1.894200 USDT
+Price Diff: 0.89%
+Profit/$1000: 8.89 USDT
+
+
+2025-09-29 12:50:16,068 - INFO - Telegram message sent to 7461844128 successfully.
+2025-09-29 12:50:17,402 - INFO - Telegram message sent to 6551264734 successfully.
+2025-09-29 12:50:17,402 - INFO - Waiting 60 seconds before next update...
+2025-09-29 12:50:20,327 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:50:31,425 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:50:41,623 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:50:52,494 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:51:02,984 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:51:06,421 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:51:07,265 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-09-29 12:51:16,969 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:51:25,949 - INFO - 
+--- Aggregated Exchange Stats ---
+         exchange  last_price_mean  last_vol_mean  spread_mean  num_trades
+0         binance          4082.51   9.838136e+08         0.02          29
+1      bybit_spot          3929.48   1.959611e+10         0.02          30
+2  hotcoin_global          6230.71   9.265969e+06         0.08          19
+3             mxc          4384.63   3.090617e+10         0.03          27
+4          pionex         14624.97   1.133310e+08         0.02           8
+2025-09-29 12:51:26,062 - INFO - 
+--- Arbitrage Opportunities ---
+   token buy_exchange  buy_price sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0    XPL          mxc    1.29250       binance      1.2979            0.42                 4.18
+1    ZKC   bybit_spot    0.53500           mxc      0.5390            0.75                 7.48
+2   AVNT   bybit_spot    1.26389       binance      1.2720            0.64                 6.42
+3   MIRA      binance    0.92090           mxc      0.9276            0.73                 7.28
+4   FORM          mxc    1.12140       binance      1.1264            0.45                 4.46
+5   AVAX       pionex   29.64000           mxc     29.8300            0.64                 6.41
+6  KAITO          mxc    1.28230       binance      1.2865            0.33                 3.28
+7  ASTER   bybit_spot    1.87580           mxc      1.8942            0.98                 9.81
+2025-09-29 12:51:26,070 - INFO - Sending Telegram message:
+Arbitrage Opportunities Found!
+
+Token: XPL
+Buy: mxc @ 1.292500 USDT
+Sell: binance @ 1.297900 USDT
+Price Diff: 0.42%
+Profit/$1000: 4.18 USDT
+
+Token: ZKC
+Buy: bybit_spot @ 0.535000 USDT
+Sell: mxc @ 0.539000 USDT
+Price Diff: 0.75%
+Profit/$1000: 7.48 USDT
+
+Token: AVNT
+Buy: bybit_spot @ 1.263890 USDT
+Sell: binance @ 1.272000 USDT
+Price Diff: 0.64%
+Profit/$1000: 6.42 USDT
+
+Token: MIRA
+Buy: binance @ 0.920900 USDT
+Sell: mxc @ 0.927600 USDT
+Price Diff: 0.73%
+Profit/$1000: 7.28 USDT
+
+Token: FORM
+Buy: mxc @ 1.121400 USDT
+Sell: binance @ 1.126400 USDT
+Price Diff: 0.45%
+Profit/$1000: 4.46 USDT
+
+Token: AVAX
+Buy: pionex @ 29.640000 USDT
+Sell: mxc @ 29.830000 USDT
+Price Diff: 0.64%
+Profit/$1000: 6.41 USDT
+
+Token: KAITO
+Buy: mxc @ 1.282300 USDT
+Sell: binance @ 1.286500 USDT
+Price Diff: 0.33%
+Profit/$1000: 3.28 USDT
+
+Token: ASTER
+Buy: bybit_spot @ 1.875800 USDT
+Sell: mxc @ 1.894200 USDT
+Price Diff: 0.98%
+Profit/$1000: 9.81 USDT
+
+
+2025-09-29 12:51:26,712 - INFO - Telegram message sent to 7461844128 successfully.
+2025-09-29 12:51:27,158 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:51:27,322 - INFO - Telegram message sent to 6551264734 successfully.
+2025-09-29 12:51:27,330 - INFO - Waiting 60 seconds before next update...
+2025-09-29 12:51:37,355 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-09-29 12:51:47,774 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:53:07,028 - INFO - No subscriptions file found. Starting with empty set.
+2025-10-01 18:53:08,742 - INFO - Tracking 100 tokens on 10 exchanges...
+2025-10-01 18:53:08,742 - INFO - Refreshing top tokens and exchanges...
+2025-10-01 18:53:11,743 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getMe "HTTP/1.1 200 OK"
+2025-10-01 18:53:11,926 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/deleteWebhook "HTTP/1.1 200 OK"
+2025-10-01 18:53:11,926 - INFO - Application started
+2025-10-01 18:53:12,462 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:53:12,685 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-10-01 18:53:12,958 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-10-01 18:53:22,663 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:53:32,945 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:53:32,987 - INFO - 
+--- Aggregated Exchange Stats ---
+         exchange  last_price_mean  last_vol_mean  spread_mean  num_trades
+0           azbit          4911.88   9.018463e+08         0.02          25
+1         binance          2548.08   2.148276e+11         0.03          50
+2          bitget          2654.39   1.931903e+08         0.03          48
+3      bybit_spot          2315.94   2.787864e+10         0.03          55
+4       coinstore          5577.82   4.076171e+07         0.40          22
+5           coinw          2479.13   2.586592e+10         0.10          53
+6            gate          2358.97   2.172956e+10         0.03          54
+7  hotcoin_global          3031.78   7.827298e+09         0.12          42
+8             mxc          4212.01   3.420520e+10         0.05          59
+9          pionex          5814.41   5.308311e+10         0.05          21
+2025-10-01 18:53:33,169 - INFO - 
+--- Arbitrage Opportunities ---
+       token buy_exchange   buy_price   sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0        SOL       bitget  217.960000           coinw  219.094300            0.52                 5.20
+1       SOMI       bitget    0.920000         binance    0.932900            1.40                14.02
+2       PUMP      binance    0.006638             mxc    0.006735            1.46                14.61
+3       AVNT   bybit_spot    1.184260          bitget    1.192240            0.67                 6.74
+4       AAVE       bitget  284.510000       coinstore  286.290000            0.63                 6.26
+5       EDEN       bitget    0.386100         binance    0.388300            0.57                 5.70
+6         FF          mxc    0.204500           coinw    0.209780            2.58                25.82
+7        CRV         gate    0.714900  hotcoin_global    0.719500            0.64                 6.43
+8        ARB   bybit_spot    0.430400  hotcoin_global    0.432600            0.51                 5.11
+9       WLFI       bitget    0.203700       coinstore    0.205100            0.69                 6.87
+10       LDO       bitget    1.188900          pionex    1.195600            0.56                 5.64
+11      MIRA       bitget    0.616300             mxc    0.622800            1.05                10.55
+12       ZEC      binance  104.920000           coinw  107.660000            2.61                26.12
+13       WLD   bybit_spot    1.310000  hotcoin_global    1.320000            0.76                 7.63
+14      BONK   bybit_spot    0.000020           coinw    0.000021            0.84                 8.39
+15      ALGO         gate    0.217520  hotcoin_global    0.218700            0.54                 5.42
+16       FET         gate    0.585100       coinstore    0.589300            0.72                 7.18
+17       BIO         gate    0.154330           coinw    0.155890            1.01                10.11
+18     EIGEN   bybit_spot    1.479000  hotcoin_global    1.489000            0.68                 6.76
+19      DASH    coinstore   28.280000           azbit   28.570000            1.03                10.25
+20      HYPE   bybit_spot   46.810000           coinw   47.184800            0.80                 8.01
+21        0G          mxc    2.678000           coinw    2.708000            1.12                11.20
+22       WIF       bitget    0.747800       coinstore    0.752260            0.60                 5.96
+23     ORDER        coinw    0.368000      bybit_spot    0.373030            1.37                13.67
+24  FARTCOIN       bitget    0.638800           azbit    0.643100            0.67                 6.73
+2025-10-01 18:53:33,173 - INFO - Sending Telegram message:
+Arbitrage Opportunities Found!
+
+Token: SOL
+Buy: bitget @ 217.960000 USDT
+Sell: coinw @ 219.094300 USDT
+Price Diff: 0.52%
+Profit/$1000: 5.20 USDT
+
+Token: SOMI
+Buy: bitget @ 0.920000 USDT
+Sell: binance @ 0.932900 USDT
+Price Diff: 1.40%
+Profit/$1000: 14.02 USDT
+
+Token: PUMP
+Buy: binance @ 0.006638 USDT
+Sell: mxc @ 0.006735 USDT
+Price Diff: 1.46%
+Profit/$1000: 14.61 USDT
+
+Token: AVNT
+Buy: bybit_spot @ 1.184260 USDT
+Sell: bitget @ 1.192240 USDT
+Price Diff: 0.67%
+Profit/$1000: 6.74 USDT
+
+Token: AAVE
+Buy: bitget @ 284.510000 USDT
+Sell: coinstore @ 286.290000 USDT
+Price Diff: 0.63%
+Profit/$1000: 6.26 USDT
+
+Token: EDEN
+Buy: bitget @ 0.386100 USDT
+Sell: binance @ 0.388300 USDT
+Price Diff: 0.57%
+Profit/$1000: 5.70 USDT
+
+Token: FF
+Buy: mxc @ 0.204500 USDT
+Sell: coinw @ 0.209780 USDT
+Price Diff: 2.58%
+Profit/$1000: 25.82 USDT
+
+Token: CRV
+Buy: gate @ 0.714900 USDT
+Sell: hotcoin_global @ 0.719500 USDT
+Price Diff: 0.64%
+Profit/$1000: 6.43 USDT
+
+Token: ARB
+Buy: bybit_spot @ 0.430400 USDT
+Sell: hotcoin_global @ 0.432600 USDT
+Price Diff: 0.51%
+Profit/$1000: 5.11 USDT
+
+Token: WLFI
+Buy: bitget @ 0.203700 USDT
+Sell: coinstore @ 0.205100 USDT
+Price Diff: 0.69%
+Profit/$1000: 6.87 USDT
+
+Token: LDO
+Buy: bitget @ 1.188900 USDT
+Sell: pionex @ 1.195600 USDT
+Price Diff: 0.56%
+Profit/$1000: 5.64 USDT
+
+Token: MIRA
+Buy: bitget @ 0.616300 USDT
+Sell: mxc @ 0.622800 USDT
+Price Diff: 1.05%
+Profit/$1000: 10.55 USDT
+
+Token: ZEC
+Buy: binance @ 104.920000 USDT
+Sell: coinw @ 107.660000 USDT
+Price Diff: 2.61%
+Profit/$1000: 26.12 USDT
+
+Token: WLD
+Buy: bybit_spot @ 1.310000 USDT
+Sell: hotcoin_global @ 1.320000 USDT
+Price Diff: 0.76%
+Profit/$1000: 7.63 USDT
+
+Token: BONK
+Buy: bybit_spot @ 0.000020 USDT
+Sell: coinw @ 0.000021 USDT
+Price Diff: 0.84%
+Profit/$1000: 8.39 USDT
+
+Token: ALGO
+Buy: gate @ 0.217520 USDT
+Sell: hotcoin_global @ 0.218700 USDT
+Price Diff: 0.54%
+Profit/$1000: 5.42 USDT
+
+Token: FET
+Buy: gate @ 0.585100 USDT
+Sell: coinstore @ 0.589300 USDT
+Price Diff: 0.72%
+Profit/$1000: 7.18 USDT
+
+Token: BIO
+Buy: gate @ 0.154330 USDT
+Sell: coinw @ 0.155890 USDT
+Price Diff: 1.01%
+Profit/$1000: 10.11 USDT
+
+Token: EIGEN
+Buy: bybit_spot @ 1.479000 USDT
+Sell: hotcoin_global @ 1.489000 USDT
+Price Diff: 0.68%
+Profit/$1000: 6.76 USDT
+
+Token: DASH
+Buy: coinstore @ 28.280000 USDT
+Sell: azbit @ 28.570000 USDT
+Price Diff: 1.03%
+Profit/$1000: 10.25 USDT
+
+Token: HYPE
+Buy: bybit_spot @ 46.810000 USDT
+Sell: coinw @ 47.184800 USDT
+Price Diff: 0.80%
+Profit/$1000: 8.01 USDT
+
+Token: 0G
+Buy: mxc @ 2.678000 USDT
+Sell: coinw @ 2.708000 USDT
+Price Diff: 1.12%
+Profit/$1000: 11.20 USDT
+
+Token: WIF
+Buy: bitget @ 0.747800 USDT
+Sell: coinstore @ 0.752260 USDT
+Price Diff: 0.60%
+Profit/$1000: 5.96 USDT
+
+Token: ORDER
+Buy: coinw @ 0.368000 USDT
+Sell: bybit_spot @ 0.373030 USDT
+Price Diff: 1.37%
+Profit/$1000: 13.67 USDT
+
+Token: FARTCOIN
+Buy: bitget @ 0.638800 USDT
+Sell: azbit @ 0.643100 USDT
+Price Diff: 0.67%
+Profit/$1000: 6.73 USDT
+
+
+2025-10-01 18:53:33,175 - INFO - Waiting 120 seconds before next update...
+2025-10-01 18:53:43,130 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:53:53,308 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:54:03,513 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:54:15,139 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:54:26,212 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:54:36,388 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:54:46,593 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:54:57,129 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:55:07,330 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:55:21,735 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:55:32,933 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:55:43,758 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:55:53,988 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:56:00,418 - INFO - 
+--- Aggregated Exchange Stats ---
+         exchange  last_price_mean  last_vol_mean  spread_mean  num_trades
+0           azbit          4910.66   9.018463e+08         0.02          25
+1         binance          4884.87   2.149552e+11         0.03          50
+2          bitget          2653.75   1.934434e+08         0.03          48
+3      bybit_spot          2314.21   2.787762e+10         0.03          55
+4       coinstore          5577.00   4.076178e+07         0.40          22
+5           coinw          2451.76   2.638802e+10         0.10          52
+6            gate          2403.10   2.215602e+10         0.03          53
+7  hotcoin_global          3031.09   7.827298e+09         0.12          42
+8             mxc          4211.54   3.420519e+10         0.05          59
+9          pionex          5813.50   5.308311e+10         0.05          21
+2025-10-01 18:56:00,561 - INFO - 
+--- Arbitrage Opportunities ---
+       token buy_exchange   buy_price   sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0        SOL   bybit_spot  217.600000  hotcoin_global  218.980000            0.63                 6.34
+1        XPL        coinw    0.933530          bitget    0.938280            0.51                 5.09
+2        XRP      binance    2.919800  hotcoin_global    2.935700            0.54                 5.45
+3       SOMI      binance    0.923300          bitget    0.928700            0.58                 5.85
+4       BARD          mxc    0.936000          bitget    0.944610            0.92                 9.20
+5       PUMP        coinw    0.006640             mxc    0.006735            1.43                14.31
+6      PENGU   bybit_spot    0.030837  hotcoin_global    0.031017            0.58                 5.84
+7     ALPINE         gate    2.036300         binance    2.057000            1.02                10.17
+8       AAVE   bybit_spot  284.440000       coinstore  286.290000            0.65                 6.50
+9       MIRA      binance    0.615400             mxc    0.622800            1.20                12.02
+10      EDEN         gate    0.385100             mxc    0.388000            0.75                 7.53
+11      LINK      binance   22.300000  hotcoin_global   22.430000            0.58                 5.83
+12       CRV      binance    0.715000  hotcoin_global    0.719500            0.63                 6.29
+13       ARB      binance    0.430200  hotcoin_global    0.432600            0.56                 5.58
+14       LDO   bybit_spot    1.186900          pionex    1.195600            0.73                 7.33
+15       XLM         gate    0.387460  hotcoin_global    0.389900            0.63                 6.30
+16       WLD          mxc    1.309000  hotcoin_global    1.320000            0.84                 8.40
+17      BONK        coinw    0.000020  hotcoin_global    0.000021            1.04                10.35
+18      ALGO        coinw    0.217500  hotcoin_global    0.218700            0.55                 5.52
+19       FET         gate    0.585500       coinstore    0.589300            0.65                 6.49
+20     EIGEN          mxc    1.480000  hotcoin_global    1.489000            0.61                 6.08
+21      DASH        coinw   28.270000           azbit   28.570000            1.06                10.61
+22       WIF       bitget    0.747500       coinstore    0.752260            0.64                 6.37
+23     ORDER        coinw    0.372900          bitget    0.375100            0.59                 5.90
+24  FARTCOIN         gate    0.638700           azbit    0.643100            0.69                 6.89
+2025-10-01 18:56:00,565 - INFO - Sending Telegram message:
+Arbitrage Opportunities Found!
+
+Token: SOL
+Buy: bybit_spot @ 217.600000 USDT
+Sell: hotcoin_global @ 218.980000 USDT
+Price Diff: 0.63%
+Profit/$1000: 6.34 USDT
+
+Token: XPL
+Buy: coinw @ 0.933530 USDT
+Sell: bitget @ 0.938280 USDT
+Price Diff: 0.51%
+Profit/$1000: 5.09 USDT
+
+Token: XRP
+Buy: binance @ 2.919800 USDT
+Sell: hotcoin_global @ 2.935700 USDT
+Price Diff: 0.54%
+Profit/$1000: 5.45 USDT
+
+Token: SOMI
+Buy: binance @ 0.923300 USDT
+Sell: bitget @ 0.928700 USDT
+Price Diff: 0.58%
+Profit/$1000: 5.85 USDT
+
+Token: BARD
+Buy: mxc @ 0.936000 USDT
+Sell: bitget @ 0.944610 USDT
+Price Diff: 0.92%
+Profit/$1000: 9.20 USDT
+
+Token: PUMP
+Buy: coinw @ 0.006640 USDT
+Sell: mxc @ 0.006735 USDT
+Price Diff: 1.43%
+Profit/$1000: 14.31 USDT
+
+Token: PENGU
+Buy: bybit_spot @ 0.030837 USDT
+Sell: hotcoin_global @ 0.031017 USDT
+Price Diff: 0.58%
+Profit/$1000: 5.84 USDT
+
+Token: ALPINE
+Buy: gate @ 2.036300 USDT
+Sell: binance @ 2.057000 USDT
+Price Diff: 1.02%
+Profit/$1000: 10.17 USDT
+
+Token: AAVE
+Buy: bybit_spot @ 284.440000 USDT
+Sell: coinstore @ 286.290000 USDT
+Price Diff: 0.65%
+Profit/$1000: 6.50 USDT
+
+Token: MIRA
+Buy: binance @ 0.615400 USDT
+Sell: mxc @ 0.622800 USDT
+Price Diff: 1.20%
+Profit/$1000: 12.02 USDT
+
+Token: EDEN
+Buy: gate @ 0.385100 USDT
+Sell: mxc @ 0.388000 USDT
+Price Diff: 0.75%
+Profit/$1000: 7.53 USDT
+
+Token: LINK
+Buy: binance @ 22.300000 USDT
+Sell: hotcoin_global @ 22.430000 USDT
+Price Diff: 0.58%
+Profit/$1000: 5.83 USDT
+
+Token: CRV
+Buy: binance @ 0.715000 USDT
+Sell: hotcoin_global @ 0.719500 USDT
+Price Diff: 0.63%
+Profit/$1000: 6.29 USDT
+
+Token: ARB
+Buy: binance @ 0.430200 USDT
+Sell: hotcoin_global @ 0.432600 USDT
+Price Diff: 0.56%
+Profit/$1000: 5.58 USDT
+
+Token: LDO
+Buy: bybit_spot @ 1.186900 USDT
+Sell: pionex @ 1.195600 USDT
+Price Diff: 0.73%
+Profit/$1000: 7.33 USDT
+
+Token: XLM
+Buy: gate @ 0.387460 USDT
+Sell: hotcoin_global @ 0.389900 USDT
+Price Diff: 0.63%
+Profit/$1000: 6.30 USDT
+
+Token: WLD
+Buy: mxc @ 1.309000 USDT
+Sell: hotcoin_global @ 1.320000 USDT
+Price Diff: 0.84%
+Profit/$1000: 8.40 USDT
+
+Token: BONK
+Buy: coinw @ 0.000020 USDT
+Sell: hotcoin_global @ 0.000021 USDT
+Price Diff: 1.04%
+Profit/$1000: 10.35 USDT
+
+Token: ALGO
+Buy: coinw @ 0.217500 USDT
+Sell: hotcoin_global @ 0.218700 USDT
+Price Diff: 0.55%
+Profit/$1000: 5.52 USDT
+
+Token: FET
+Buy: gate @ 0.585500 USDT
+Sell: coinstore @ 0.589300 USDT
+Price Diff: 0.65%
+Profit/$1000: 6.49 USDT
+
+Token: EIGEN
+Buy: mxc @ 1.480000 USDT
+Sell: hotcoin_global @ 1.489000 USDT
+Price Diff: 0.61%
+Profit/$1000: 6.08 USDT
+
+Token: DASH
+Buy: coinw @ 28.270000 USDT
+Sell: azbit @ 28.570000 USDT
+Price Diff: 1.06%
+Profit/$1000: 10.61 USDT
+
+Token: WIF
+Buy: bitget @ 0.747500 USDT
+Sell: coinstore @ 0.752260 USDT
+Price Diff: 0.64%
+Profit/$1000: 6.37 USDT
+
+Token: ORDER
+Buy: coinw @ 0.372900 USDT
+Sell: bitget @ 0.375100 USDT
+Price Diff: 0.59%
+Profit/$1000: 5.90 USDT
+
+Token: FARTCOIN
+Buy: gate @ 0.638700 USDT
+Sell: azbit @ 0.643100 USDT
+Price Diff: 0.69%
+Profit/$1000: 6.89 USDT
+
+
+2025-10-01 18:56:00,569 - INFO - Waiting 120 seconds before next update...
+2025-10-01 18:56:07,034 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:56:17,209 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:56:27,934 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:56:38,110 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:56:48,292 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:56:58,989 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:57:09,176 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:57:20,979 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:57:31,174 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:57:41,360 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:57:53,838 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:58:04,021 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:58:14,633 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:58:15,610 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:58:15,618 - INFO - Saved 1 subscriptions.
+2025-10-01 18:58:16,369 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-10-01 18:58:19,137 - INFO - 
+--- Aggregated Exchange Stats ---
+         exchange  last_price_mean  last_vol_mean  spread_mean  num_trades
+0           azbit          5115.71   9.388001e+08         0.02          24
+1         binance          4788.42   2.108861e+11         0.03          51
+2          bitget          2546.69   1.875501e+08         0.03          50
+3      bybit_spot          2358.88   2.844013e+10         0.03          54
+4       coinstore          5574.12   4.133755e+07         0.42          22
+5           coinw          2452.16   2.638802e+10         0.10          52
+6            gate          2314.45   2.137256e+10         0.03          55
+7  hotcoin_global          3029.94   3.790704e+10         0.12          42
+8             mxc          4211.42   3.420519e+10         0.05          59
+9          pionex          5813.14   5.285349e+10         0.05          21
+2025-10-01 18:58:19,291 - INFO - 
+--- Arbitrage Opportunities ---
+       token buy_exchange  buy_price   sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0        SOL        coinw  217.60500             mxc  218.830000            0.56                 5.63
+1        XPL        coinw    0.93353         binance    0.944700            1.20                11.97
+2       SOMI          mxc    0.92690         binance    0.933200            0.68                 6.80
+3       BARD          mxc    0.93600          bitget    0.948370            1.32                13.22
+4       PUMP        coinw    0.00664             mxc    0.006735            1.43                14.31
+5       AVNT         gate    1.19770          bitget    1.210170            1.04                10.41
+6      PENGU        coinw    0.03084  hotcoin_global    0.031017            0.57                 5.74
+7     ALPINE          mxc    2.03750          bitget    2.059000            1.06                10.55
+8       AAVE    coinstore  284.33000             mxc  286.200000            0.66                 6.58
+9       MIRA      binance    0.61940             mxc    0.622800            0.55                 5.49
+10        FF          mxc    0.20450            gate    0.205650            0.56                 5.62
+11      LINK    coinstore   22.30800             mxc   22.430000            0.55                 5.47
+12       CRV        coinw    0.71550           azbit    0.719500            0.56                 5.59
+13       LDO      binance    1.18760  hotcoin_global    1.194900            0.61                 6.15
+14      BONK        coinw    0.00002             mxc    0.000020            0.54                 5.44
+15     EIGEN          mxc    1.48000  hotcoin_global    1.489000            0.61                 6.08
+16      DASH        coinw   28.27000           azbit   28.570000            1.06                10.61
+17     ORDER        coinw    0.37290          bitget    0.379600            1.80                17.97
+18  FARTCOIN       bitget    0.63930           azbit    0.643100            0.59                 5.94
+19       SQD         gate    0.20152      bybit_spot    0.203630            1.05                10.47
+2025-10-01 18:58:19,294 - INFO - Sending Telegram message:
+Arbitrage Opportunities Found!
+
+Token: SOL
+Buy: coinw @ 217.605000 USDT
+Sell: mxc @ 218.830000 USDT
+Price Diff: 0.56%
+Profit/$1000: 5.63 USDT
+
+Token: XPL
+Buy: coinw @ 0.933530 USDT
+Sell: binance @ 0.944700 USDT
+Price Diff: 1.20%
+Profit/$1000: 11.97 USDT
+
+Token: SOMI
+Buy: mxc @ 0.926900 USDT
+Sell: binance @ 0.933200 USDT
+Price Diff: 0.68%
+Profit/$1000: 6.80 USDT
+
+Token: BARD
+Buy: mxc @ 0.936000 USDT
+Sell: bitget @ 0.948370 USDT
+Price Diff: 1.32%
+Profit/$1000: 13.22 USDT
+
+Token: PUMP
+Buy: coinw @ 0.006640 USDT
+Sell: mxc @ 0.006735 USDT
+Price Diff: 1.43%
+Profit/$1000: 14.31 USDT
+
+Token: AVNT
+Buy: gate @ 1.197700 USDT
+Sell: bitget @ 1.210170 USDT
+Price Diff: 1.04%
+Profit/$1000: 10.41 USDT
+
+Token: PENGU
+Buy: coinw @ 0.030840 USDT
+Sell: hotcoin_global @ 0.031017 USDT
+Price Diff: 0.57%
+Profit/$1000: 5.74 USDT
+
+Token: ALPINE
+Buy: mxc @ 2.037500 USDT
+Sell: bitget @ 2.059000 USDT
+Price Diff: 1.06%
+Profit/$1000: 10.55 USDT
+
+Token: AAVE
+Buy: coinstore @ 284.330000 USDT
+Sell: mxc @ 286.200000 USDT
+Price Diff: 0.66%
+Profit/$1000: 6.58 USDT
+
+Token: MIRA
+Buy: binance @ 0.619400 USDT
+Sell: mxc @ 0.622800 USDT
+Price Diff: 0.55%
+Profit/$1000: 5.49 USDT
+
+Token: FF
+Buy: mxc @ 0.204500 USDT
+Sell: gate @ 0.205650 USDT
+Price Diff: 0.56%
+Profit/$1000: 5.62 USDT
+
+Token: LINK
+Buy: coinstore @ 22.308000 USDT
+Sell: mxc @ 22.430000 USDT
+Price Diff: 0.55%
+Profit/$1000: 5.47 USDT
+
+Token: CRV
+Buy: coinw @ 0.715500 USDT
+Sell: azbit @ 0.719500 USDT
+Price Diff: 0.56%
+Profit/$1000: 5.59 USDT
+
+Token: LDO
+Buy: binance @ 1.187600 USDT
+Sell: hotcoin_global @ 1.194900 USDT
+Price Diff: 0.61%
+Profit/$1000: 6.15 USDT
+
+Token: BONK
+Buy: coinw @ 0.000020 USDT
+Sell: mxc @ 0.000020 USDT
+Price Diff: 0.54%
+Profit/$1000: 5.44 USDT
+
+Token: EIGEN
+Buy: mxc @ 1.480000 USDT
+Sell: hotcoin_global @ 1.489000 USDT
+Price Diff: 0.61%
+Profit/$1000: 6.08 USDT
+
+Token: DASH
+Buy: coinw @ 28.270000 USDT
+Sell: azbit @ 28.570000 USDT
+Price Diff: 1.06%
+Profit/$1000: 10.61 USDT
+
+Token: ORDER
+Buy: coinw @ 0.372900 USDT
+Sell: bitget @ 0.379600 USDT
+Price Diff: 1.80%
+Profit/$1000: 17.97 USDT
+
+Token: FARTCOIN
+Buy: bitget @ 0.639300 USDT
+Sell: azbit @ 0.643100 USDT
+Price Diff: 0.59%
+Profit/$1000: 5.94 USDT
+
+Token: SQD
+Buy: gate @ 0.201520 USDT
+Sell: bybit_spot @ 0.203630 USDT
+Price Diff: 1.05%
+Profit/$1000: 10.47 USDT
+
+
+2025-10-01 18:58:21,124 - INFO - Telegram message sent to 706456243 successfully.
+2025-10-01 18:58:21,129 - INFO - Waiting 120 seconds before next update...
+2025-10-01 18:58:25,812 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:58:37,038 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:58:47,216 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:58:57,407 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:59:07,596 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:59:17,792 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:59:32,122 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:59:43,967 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 18:59:54,165 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:00:04,494 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:00:15,128 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:00:25,321 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:00:35,499 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:00:38,085 - INFO - 
+--- Aggregated Exchange Stats ---
+         exchange  last_price_mean  last_vol_mean  spread_mean  num_trades
+0           azbit          9215.86   8.651714e+08         0.02          26
+1         binance          2449.62   2.068229e+11         0.03          52
+2          bitget          2546.65   1.877361e+08         0.03          50
+3      bybit_spot          2315.40   2.791569e+10         0.03          55
+4       coinstore          5335.40   3.966289e+07         0.40          23
+5           coinw          2452.12   2.638802e+10         0.10          52
+6            gate          2273.42   2.104790e+10         0.02          56
+7  hotcoin_global          2960.96   3.702553e+10         0.13          43
+8             mxc          4067.43   3.308552e+10         0.05          61
+9          pionex          5814.94   5.285349e+10         0.05          21
+2025-10-01 19:00:38,241 - INFO - 
+--- Arbitrage Opportunities ---
+     token buy_exchange  buy_price sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0      XPL        coinw    0.93353        bitget    0.938950            0.58                 5.81
+1     BARD          mxc    0.93600    bybit_spot    0.949000            1.39                13.89
+2     PUMP        coinw    0.00664    bybit_spot    0.006711            1.07                10.69
+3    PENGU        coinw    0.03084          gate    0.031033            0.63                 6.26
+4     SOMI         gate    0.92060           mxc    0.926900            0.68                 6.84
+5       FF      binance    0.20403         coinw    0.205170            0.56                 5.59
+6   ALPINE          mxc    2.03750        bitget    2.066000            1.40                13.99
+7      ZEC          mxc  104.71000       binance  105.330000            0.59                 5.92
+8     MIRA       bitget    0.62020       binance    0.624700            0.73                 7.26
+9     BONK        coinw    0.00002           mxc    0.000020            0.54                 5.44
+10    DASH        coinw   28.27000         azbit   28.510000            0.85                 8.49
+11   ORDER        coinw    0.37290    bybit_spot    0.378190            1.42                14.19
+12     MNT   bybit_spot    1.88870         coinw    1.905600            0.89                 8.95
+13     XAN         gate    0.11550           mxc    0.117300            1.56                15.58
+14     SQD         gate    0.20199    bybit_spot    0.203880            0.94                 9.36
+2025-10-01 19:00:38,243 - INFO - Sending Telegram message:
+Arbitrage Opportunities Found!
+
+Token: XPL
+Buy: coinw @ 0.933530 USDT
+Sell: bitget @ 0.938950 USDT
+Price Diff: 0.58%
+Profit/$1000: 5.81 USDT
+
+Token: BARD
+Buy: mxc @ 0.936000 USDT
+Sell: bybit_spot @ 0.949000 USDT
+Price Diff: 1.39%
+Profit/$1000: 13.89 USDT
+
+Token: PUMP
+Buy: coinw @ 0.006640 USDT
+Sell: bybit_spot @ 0.006711 USDT
+Price Diff: 1.07%
+Profit/$1000: 10.69 USDT
+
+Token: PENGU
+Buy: coinw @ 0.030840 USDT
+Sell: gate @ 0.031033 USDT
+Price Diff: 0.63%
+Profit/$1000: 6.26 USDT
+
+Token: SOMI
+Buy: gate @ 0.920600 USDT
+Sell: mxc @ 0.926900 USDT
+Price Diff: 0.68%
+Profit/$1000: 6.84 USDT
+
+Token: FF
+Buy: binance @ 0.204030 USDT
+Sell: coinw @ 0.205170 USDT
+Price Diff: 0.56%
+Profit/$1000: 5.59 USDT
+
+Token: ALPINE
+Buy: mxc @ 2.037500 USDT
+Sell: bitget @ 2.066000 USDT
+Price Diff: 1.40%
+Profit/$1000: 13.99 USDT
+
+Token: ZEC
+Buy: mxc @ 104.710000 USDT
+Sell: binance @ 105.330000 USDT
+Price Diff: 0.59%
+Profit/$1000: 5.92 USDT
+
+Token: MIRA
+Buy: bitget @ 0.620200 USDT
+Sell: binance @ 0.624700 USDT
+Price Diff: 0.73%
+Profit/$1000: 7.26 USDT
+
+Token: BONK
+Buy: coinw @ 0.000020 USDT
+Sell: mxc @ 0.000020 USDT
+Price Diff: 0.54%
+Profit/$1000: 5.44 USDT
+
+Token: DASH
+Buy: coinw @ 28.270000 USDT
+Sell: azbit @ 28.510000 USDT
+Price Diff: 0.85%
+Profit/$1000: 8.49 USDT
+
+Token: ORDER
+Buy: coinw @ 0.372900 USDT
+Sell: bybit_spot @ 0.378190 USDT
+Price Diff: 1.42%
+Profit/$1000: 14.19 USDT
+
+Token: MNT
+Buy: bybit_spot @ 1.888700 USDT
+Sell: coinw @ 1.905600 USDT
+Price Diff: 0.89%
+Profit/$1000: 8.95 USDT
+
+Token: XAN
+Buy: gate @ 0.115500 USDT
+Sell: mxc @ 0.117300 USDT
+Price Diff: 1.56%
+Profit/$1000: 15.58 USDT
+
+Token: SQD
+Buy: gate @ 0.201990 USDT
+Sell: bybit_spot @ 0.203880 USDT
+Price Diff: 0.94%
+Profit/$1000: 9.36 USDT
+
+
+2025-10-01 19:00:38,999 - INFO - Telegram message sent to 706456243 successfully.
+2025-10-01 19:00:39,004 - INFO - Waiting 120 seconds before next update...
+2025-10-01 19:00:46,560 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:00:56,750 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:01:07,030 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:01:17,214 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:01:27,402 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:01:37,621 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:01:47,994 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:01:58,176 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:02:09,301 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:02:19,490 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:02:29,884 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:02:34,685 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:02:34,689 - INFO - Saved 0 subscriptions.
+2025-10-01 19:02:35,962 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-10-01 19:02:41,511 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:02:42,130 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-10-01 19:02:52,396 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:02:53,975 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:02:54,781 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-10-01 19:02:54,931 - INFO - 
+--- Aggregated Exchange Stats ---
+         exchange  last_price_mean  last_vol_mean  spread_mean  num_trades
+0           azbit          9216.78   8.651714e+08         0.02          26
+1         binance          4790.88   2.111853e+11         0.03          51
+2          bitget          2548.55   1.877627e+08         0.03          50
+3      bybit_spot          2274.81   2.743461e+10         0.03          56
+4       coinstore          5580.35   4.133756e+07         0.41          22
+5           coinw          2452.58   2.638799e+10         0.10          52
+6            gate          2403.73   2.229419e+10         0.03          53
+7  hotcoin_global          2961.99   3.702553e+10         0.13          43
+8             mxc          4135.76   3.369761e+10         0.05          60
+9          pionex          5817.09   5.285349e+10         0.05          21
+2025-10-01 19:02:55,026 - INFO - 
+--- Arbitrage Opportunities ---
+     token buy_exchange   buy_price sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0     BARD      binance    0.952000           mxc    0.956900            0.51                 5.15
+1     PUMP          mxc    0.006688       binance    0.006723            0.52                 5.23
+2    PENGU        coinw    0.030840        bitget    0.031165            1.05                10.54
+3   ALPINE          mxc    2.063000        bitget    2.074000            0.53                 5.33
+4      APT        coinw    4.635150       binance    4.659000            0.51                 5.15
+5      UNI    coinstore    7.993600       binance    8.038000            0.56                 5.55
+6     EDEN       bitget    0.382100       binance    0.386200            1.07                10.73
+7       FF   bybit_spot    0.203000         coinw    0.205170            1.07                10.69
+8     WLFI    coinstore    0.204200         coinw    0.205400            0.59                 5.88
+9      ZEC          mxc  104.710000       binance  106.000000            1.23                12.32
+10    MIRA          mxc    0.621300        bitget    0.625900            0.74                 7.40
+11      0G          mxc    2.663000         coinw    2.680900            0.67                 6.72
+12   EIGEN        coinw    1.483892          gate    1.497900            0.94                 9.44
+13    DASH        coinw   28.270000         azbit   28.510000            0.85                 8.49
+14     ZEN          mxc    9.024000    bybit_spot    9.121000            1.07                10.75
+15   ORDER        coinw    0.372900          gate    0.380200            1.96                19.58
+16     MNT   bybit_spot    1.881600         coinw    1.905600            1.28                12.76
+17     SQD   bybit_spot    0.201610          gate    0.203170            0.77                 7.74
+2025-10-01 19:02:55,029 - INFO - Sending Telegram message:
+Arbitrage Opportunities Found!
+
+Token: BARD
+Buy: binance @ 0.952000 USDT
+Sell: mxc @ 0.956900 USDT
+Price Diff: 0.51%
+Profit/$1000: 5.15 USDT
+
+Token: PUMP
+Buy: mxc @ 0.006688 USDT
+Sell: binance @ 0.006723 USDT
+Price Diff: 0.52%
+Profit/$1000: 5.23 USDT
+
+Token: PENGU
+Buy: coinw @ 0.030840 USDT
+Sell: bitget @ 0.031165 USDT
+Price Diff: 1.05%
+Profit/$1000: 10.54 USDT
+
+Token: ALPINE
+Buy: mxc @ 2.063000 USDT
+Sell: bitget @ 2.074000 USDT
+Price Diff: 0.53%
+Profit/$1000: 5.33 USDT
+
+Token: APT
+Buy: coinw @ 4.635150 USDT
+Sell: binance @ 4.659000 USDT
+Price Diff: 0.51%
+Profit/$1000: 5.15 USDT
+
+Token: UNI
+Buy: coinstore @ 7.993600 USDT
+Sell: binance @ 8.038000 USDT
+Price Diff: 0.56%
+Profit/$1000: 5.55 USDT
+
+Token: EDEN
+Buy: bitget @ 0.382100 USDT
+Sell: binance @ 0.386200 USDT
+Price Diff: 1.07%
+Profit/$1000: 10.73 USDT
+
+Token: FF
+Buy: bybit_spot @ 0.203000 USDT
+Sell: coinw @ 0.205170 USDT
+Price Diff: 1.07%
+Profit/$1000: 10.69 USDT
+
+Token: WLFI
+Buy: coinstore @ 0.204200 USDT
+Sell: coinw @ 0.205400 USDT
+Price Diff: 0.59%
+Profit/$1000: 5.88 USDT
+
+Token: ZEC
+Buy: mxc @ 104.710000 USDT
+Sell: binance @ 106.000000 USDT
+Price Diff: 1.23%
+Profit/$1000: 12.32 USDT
+
+Token: MIRA
+Buy: mxc @ 0.621300 USDT
+Sell: bitget @ 0.625900 USDT
+Price Diff: 0.74%
+Profit/$1000: 7.40 USDT
+
+Token: 0G
+Buy: mxc @ 2.663000 USDT
+Sell: coinw @ 2.680900 USDT
+Price Diff: 0.67%
+Profit/$1000: 6.72 USDT
+
+Token: EIGEN
+Buy: coinw @ 1.483892 USDT
+Sell: gate @ 1.497900 USDT
+Price Diff: 0.94%
+Profit/$1000: 9.44 USDT
+
+Token: DASH
+Buy: coinw @ 28.270000 USDT
+Sell: azbit @ 28.510000 USDT
+Price Diff: 0.85%
+Profit/$1000: 8.49 USDT
+
+Token: ZEN
+Buy: mxc @ 9.024000 USDT
+Sell: bybit_spot @ 9.121000 USDT
+Price Diff: 1.07%
+Profit/$1000: 10.75 USDT
+
+Token: ORDER
+Buy: coinw @ 0.372900 USDT
+Sell: gate @ 0.380200 USDT
+Price Diff: 1.96%
+Profit/$1000: 19.58 USDT
+
+Token: MNT
+Buy: bybit_spot @ 1.881600 USDT
+Sell: coinw @ 1.905600 USDT
+Price Diff: 1.28%
+Profit/$1000: 12.76 USDT
+
+Token: SQD
+Buy: bybit_spot @ 0.201610 USDT
+Sell: gate @ 0.203170 USDT
+Price Diff: 0.77%
+Profit/$1000: 7.74 USDT
+
+
+2025-10-01 19:02:55,031 - INFO - Waiting 120 seconds before next update...
+2025-10-01 19:02:58,035 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:02:58,996 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-10-01 19:03:00,706 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:03:00,713 - INFO - Saved 1 subscriptions.
+2025-10-01 19:03:00,929 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-10-01 19:03:04,303 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:03:04,435 - INFO - 
+--- Arbitrage Opportunities ---
+     token buy_exchange   buy_price sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0     BARD      binance    0.952000           mxc    0.956900            0.51                 5.15
+1     PUMP          mxc    0.006688       binance    0.006723            0.52                 5.23
+2    PENGU        coinw    0.030840        bitget    0.031165            1.05                10.54
+3   ALPINE          mxc    2.063000        bitget    2.074000            0.53                 5.33
+4      APT        coinw    4.635150       binance    4.659000            0.51                 5.15
+5      UNI    coinstore    7.993600       binance    8.038000            0.56                 5.55
+6     EDEN       bitget    0.382100       binance    0.386200            1.07                10.73
+7       FF   bybit_spot    0.203000         coinw    0.205170            1.07                10.69
+8     WLFI    coinstore    0.204200         coinw    0.205400            0.59                 5.88
+9      ZEC          mxc  104.710000       binance  106.000000            1.23                12.32
+10    MIRA          mxc    0.621300        bitget    0.625900            0.74                 7.40
+11      0G          mxc    2.663000         coinw    2.680900            0.67                 6.72
+12   EIGEN        coinw    1.483892          gate    1.497900            0.94                 9.44
+13    DASH        coinw   28.270000         azbit   28.510000            0.85                 8.49
+14     ZEN          mxc    9.024000    bybit_spot    9.121000            1.07                10.75
+15   ORDER        coinw    0.372900          gate    0.380200            1.96                19.58
+16     MNT   bybit_spot    1.881600         coinw    1.905600            1.28                12.76
+17     SQD   bybit_spot    0.201610          gate    0.203170            0.77                 7.74
+2025-10-01 19:03:04,437 - INFO - Sending Telegram message:
+Arbitrage Opportunities Found!
+
+Token: BARD
+Buy: binance @ 0.952000 USDT
+Sell: mxc @ 0.956900 USDT
+Price Diff: 0.51%
+Profit/$1000: 5.15 USDT
+
+Token: PUMP
+Buy: mxc @ 0.006688 USDT
+Sell: binance @ 0.006723 USDT
+Price Diff: 0.52%
+Profit/$1000: 5.23 USDT
+
+Token: PENGU
+Buy: coinw @ 0.030840 USDT
+Sell: bitget @ 0.031165 USDT
+Price Diff: 1.05%
+Profit/$1000: 10.54 USDT
+
+Token: ALPINE
+Buy: mxc @ 2.063000 USDT
+Sell: bitget @ 2.074000 USDT
+Price Diff: 0.53%
+Profit/$1000: 5.33 USDT
+
+Token: APT
+Buy: coinw @ 4.635150 USDT
+Sell: binance @ 4.659000 USDT
+Price Diff: 0.51%
+Profit/$1000: 5.15 USDT
+
+Token: UNI
+Buy: coinstore @ 7.993600 USDT
+Sell: binance @ 8.038000 USDT
+Price Diff: 0.56%
+Profit/$1000: 5.55 USDT
+
+Token: EDEN
+Buy: bitget @ 0.382100 USDT
+Sell: binance @ 0.386200 USDT
+Price Diff: 1.07%
+Profit/$1000: 10.73 USDT
+
+Token: FF
+Buy: bybit_spot @ 0.203000 USDT
+Sell: coinw @ 0.205170 USDT
+Price Diff: 1.07%
+Profit/$1000: 10.69 USDT
+
+Token: WLFI
+Buy: coinstore @ 0.204200 USDT
+Sell: coinw @ 0.205400 USDT
+Price Diff: 0.59%
+Profit/$1000: 5.88 USDT
+
+Token: ZEC
+Buy: mxc @ 104.710000 USDT
+Sell: binance @ 106.000000 USDT
+Price Diff: 1.23%
+Profit/$1000: 12.32 USDT
+
+Token: MIRA
+Buy: mxc @ 0.621300 USDT
+Sell: bitget @ 0.625900 USDT
+Price Diff: 0.74%
+Profit/$1000: 7.40 USDT
+
+Token: 0G
+Buy: mxc @ 2.663000 USDT
+Sell: coinw @ 2.680900 USDT
+Price Diff: 0.67%
+Profit/$1000: 6.72 USDT
+
+Token: EIGEN
+Buy: coinw @ 1.483892 USDT
+Sell: gate @ 1.497900 USDT
+Price Diff: 0.94%
+Profit/$1000: 9.44 USDT
+
+Token: DASH
+Buy: coinw @ 28.270000 USDT
+Sell: azbit @ 28.510000 USDT
+Price Diff: 0.85%
+Profit/$1000: 8.49 USDT
+
+Token: ZEN
+Buy: mxc @ 9.024000 USDT
+Sell: bybit_spot @ 9.121000 USDT
+Price Diff: 1.07%
+Profit/$1000: 10.75 USDT
+
+Token: ORDER
+Buy: coinw @ 0.372900 USDT
+Sell: gate @ 0.380200 USDT
+Price Diff: 1.96%
+Profit/$1000: 19.58 USDT
+
+Token: MNT
+Buy: bybit_spot @ 1.881600 USDT
+Sell: coinw @ 1.905600 USDT
+Price Diff: 1.28%
+Profit/$1000: 12.76 USDT
+
+Token: SQD
+Buy: bybit_spot @ 0.201610 USDT
+Sell: gate @ 0.203170 USDT
+Price Diff: 0.77%
+Profit/$1000: 7.74 USDT
+
+
+2025-10-01 19:03:04,821 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-10-01 19:03:14,890 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:03:25,093 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:03:35,278 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:03:45,491 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:03:55,662 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:04:06,187 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:04:20,103 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:04:33,126 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:05:46,382 - INFO - Loaded 1 subscriptions.
+2025-10-01 19:05:47,735 - INFO - Tracking 100 tokens on 10 exchanges...
+2025-10-01 19:05:47,736 - INFO - Refreshing top tokens and exchanges...
+2025-10-01 19:05:48,750 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getMe "HTTP/1.1 200 OK"
+2025-10-01 19:05:48,946 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/deleteWebhook "HTTP/1.1 200 OK"
+2025-10-01 19:05:48,946 - INFO - Application started
+2025-10-01 19:05:56,565 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:05:57,295 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-10-01 19:06:00,156 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:06:00,163 - INFO - Saved 1 subscriptions.
+2025-10-01 19:06:00,375 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-10-01 19:06:03,106 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:06:03,441 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-10-01 19:06:05,283 - INFO - 
+--- Aggregated Exchange Stats ---
+         exchange  last_price_mean  last_vol_mean  spread_mean  num_trades
+0           azbit          9214.48   8.644042e+08         0.02          26
+1         binance          2497.85   2.112914e+11         0.03          51
+2          bitget          2449.46   1.810456e+08         0.03          52
+3      bybit_spot          2315.56   2.795994e+10         0.03          55
+4       coinstore          6404.00   4.628212e+07         0.38          19
+5           coinw          2499.52   2.693841e+10         0.10          51
+6            gate          2358.13   2.186730e+10         0.03          54
+7  hotcoin_global          3030.75   3.790638e+10         0.13          42
+8             mxc          4277.24   3.485688e+10         0.05          58
+9          pionex          6781.91   6.164515e+10         0.04          18
+2025-10-01 19:06:05,495 - INFO - 
+--- Arbitrage Opportunities ---
+     token    buy_exchange   buy_price sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0      XPL      bybit_spot    0.925200         coinw    0.935820            1.15                11.48
+1     SOMI         binance    0.906800    bybit_spot    0.915200            0.93                 9.26
+2    PENGU             mxc    0.030918         coinw    0.031120            0.65                 6.53
+3     EDEN          bitget    0.380500           mxc    0.383900            0.89                 8.94
+4   ALPINE             mxc    2.063000       binance    2.075000            0.58                 5.82
+5       FF         binance    0.201910           mxc    0.203700            0.89                 8.87
+6     AAVE             mxc  284.920000     coinstore  286.350000            0.50                 5.02
+7     MIRA             mxc    0.621300       binance    0.625200            0.63                 6.28
+8     WLFI       coinstore    0.203500         coinw    0.205400            0.93                 9.34
+9      ZEC             mxc  104.710000         coinw  106.040000            1.27                12.70
+10      0G            gate    2.652000    bybit_spot    2.678000            0.98                 9.80
+11    ATOM             mxc    4.139000         coinw    4.163400            0.59                 5.90
+12     BIO  hotcoin_global    0.154900         coinw    0.156080            0.76                 7.62
+13   EIGEN  hotcoin_global    1.486000         coinw    1.501236            1.03                10.25
+14    STBL            gate    0.325600           mxc    0.329360            1.15                11.55
+2025-10-01 19:06:06,374 - INFO - Telegram message sent to 706456243 successfully.
+2025-10-01 19:06:06,380 - INFO - Waiting 120 seconds before next update...
+2025-10-01 19:06:37,319 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:06:47,511 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:07:00,033 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:07:11,050 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:07:21,231 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:07:31,694 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:07:41,914 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:07:54,753 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:08:04,961 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:08:07,200 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:08:07,953 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-10-01 19:08:10,060 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:08:10,068 - INFO - Saved 2 subscriptions.
+2025-10-01 19:08:10,406 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-10-01 19:08:20,255 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-01 19:08:21,356 - INFO - 
+--- Aggregated Exchange Stats ---
+         exchange  last_price_mean  last_vol_mean  spread_mean  num_trades
+0           azbit          9585.73   4.564984e+09         0.03          25
+1         binance          4700.21   2.072601e+11         0.03          52
+2          bitget          2452.71   1.813588e+08         0.03          52
+3      bybit_spot          2276.90   2.747170e+10         0.03          56
+4       coinstore          6140.22   4.397288e+07         0.37          20
+5           coinw          2500.95   2.693841e+10         0.10          51
+6            gate          2360.12   2.186209e+10         0.03          54
+7  hotcoin_global          3032.77   3.805900e+10         0.13          42
+8             mxc          4278.52   3.485688e+10         0.05          58
+9          pionex          6786.79   6.144599e+10         0.04          18
+2025-10-01 19:08:21,628 - INFO - 
+--- Arbitrage Opportunities ---
+     token    buy_exchange   buy_price sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0      XPL            gate    0.924000         coinw    0.935820            1.28                12.79
+1     BARD             mxc    0.956900    bybit_spot    0.961800            0.51                 5.12
+2     SOMI      bybit_spot    0.907800           mxc    0.914500            0.74                 7.38
+3    PENGU             mxc    0.030918       binance    0.031276            1.16                11.58
+4   ALPINE         binance    2.047000           mxc    2.063000            0.78                 7.82
+5       FF           coinw    0.202510           mxc    0.203700            0.59                 5.88
+6     AAVE             mxc  284.920000     coinstore  286.350000            0.50                 5.02
+7      UNI           azbit    8.014000    bybit_spot    8.061000            0.59                 5.86
+8     EDEN          bitget    0.378300           mxc    0.383900            1.48                14.80
+9     WLFI         binance    0.203500         coinw    0.205400            0.93                 9.34
+10     ZEC             mxc  104.710000         coinw  106.040000            1.27                12.70
+11     XLM           azbit    0.387800    bybit_spot    0.389900            0.54                 5.42
+12    MIRA             mxc    0.621300       binance    0.629100            1.26                12.55
+13     DOT             mxc    4.056000    bybit_spot    4.077000            0.52                 5.18
+14      0G           coinw    2.661500       binance    2.679000            0.66                 6.58
+15    ATOM             mxc    4.139000    bybit_spot    4.171000            0.77                 7.73
+16     BIO  hotcoin_global    0.154900         coinw    0.156080            0.76                 7.62
+17   EIGEN  hotcoin_global    1.486000         coinw    1.501236            1.03                10.25
+18    DASH           coinw   28.450000        pionex   28.600000            0.53                 5.27
+19   KAITO             mxc    1.479000        bitget    1.491200            0.82                 8.25
+20    STBL            gate    0.325000           mxc    0.329360            1.34                13.42
+2025-10-01 19:08:22,478 - INFO - Telegram message sent to 706456243 successfully.
+2025-10-01 19:08:23,129 - INFO - Telegram message sent to 6551264734 successfully.
+2025-10-01 19:08:23,135 - INFO - Waiting 120 seconds before next update...
+2025-10-01 19:08:30,469 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
