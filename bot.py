@@ -1,18 +1,20 @@
 import time
 import pandas as pd
 import json
-import os
 from datetime import datetime
-from api import get_all_tickers, get_top_tokens, get_exchanges
-from aggregation import display_agg, detect_arbitrage
 from utils import convert_to_local_tz, logging
 import requests
 import asyncio
 from telegram.ext import Application, CommandHandler
 from telegram import Update
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 ADMIN_CHAT_ID = 706456243  # Your admin chat ID
+API_BASE_URL = "http://localhost:8000"  # Change to deployed URL
 
 # Global flag to control bot loop
 running = True
@@ -20,7 +22,7 @@ running = True
 # In-memory set for subscribed user chat IDs
 subscribed_chats = set()
 
-# Cache for latest scan data
+# Cache for latest scan data (optional, since API is primary)
 latest_scan_data = {"df_all": None, "timestamp": None}
 
 SUBSCRIPTIONS_FILE = "subscriptions.json"
@@ -96,8 +98,15 @@ async def restart(update: Update, context):
 
 async def status(update: Update, context):
     """Report bot status."""
-    last_scan_time = datetime.fromtimestamp(latest_scan_data["timestamp"]).strftime(
-        "%Y-%m-%d %H:%M:%S") if latest_scan_data["timestamp"] else "No scan yet"
+    try:
+        response = requests.get(f"{API_BASE_URL}/status")
+        response.raise_for_status()
+        api_status = response.json()
+        last_scan_time = datetime.fromtimestamp(api_status["last_scan_time"]).strftime(
+            "%Y-%m-%d %H:%M:%S") if api_status["last_scan_time"] else "No scan yet"
+    except Exception:
+        last_scan_time = "API unavailable"
+
     message = (
         f"Bot Status:\n"
         f"Running: {'Yes' if running else 'No'}\n"
@@ -108,38 +117,30 @@ async def status(update: Update, context):
 
 
 async def scan_opportunities(update: Update, context):
-    """Run arbitrage scan using cached data and send results."""
-    if latest_scan_data["df_all"] is None or latest_scan_data["timestamp"] is None:
-        await update.message.reply_text("No recent data available. Please wait for the next scan cycle.")
-        return
+    """Run arbitrage scan using API data and send results."""
+    try:
+        response = requests.get(f"{API_BASE_URL}/arbitrage")
+        response.raise_for_status()
+        data = response.json()
+        df_arbitrage = pd.DataFrame(data) if data and isinstance(
+            data, list) else pd.DataFrame()
 
-    # Check if data is recent (within 120 seconds to match new interval)
-    current_time = time.time()
-    if current_time - latest_scan_data["timestamp"] > 120:
-        await update.message.reply_text("Data is outdated. Please wait for the next scan cycle.")
-        return
-
-    df_all = latest_scan_data["df_all"]
-    if df_all.empty:
-        await update.message.reply_text("No tickers found in the latest scan.")
-        return
-
-    df_arbitrage = detect_arbitrage(
-        df_all, min_profit_pct=0.5)  # Updated to 0.5%
-    if df_arbitrage.empty:
-        await update.message.reply_text("No arbitrage opportunities found above threshold. 📉")
-    else:
-        message = "⚡ Arbitrage Opportunities Found! 📈\n\n"
-        for _, row in df_arbitrage.iterrows():
-            message += (
-                f"💸 Token: {row['token']}\n"
-                f"💰 Buy: {row['buy_exchange']} @ {row['buy_price']:.6f} USDT\n"
-                f"💰 Sell: {row['sell_exchange']} @ {row['sell_price']:.6f} USDT\n"
-                f"📈 Price Diff: {row['price_diff_pct']:.2f}%\n"
-                f"💵 Profit/$1000: {row['profit_per_1000_usd']:.2f} USDT\n\n"
-            )
-        logging.info(f"Sending Telegram message:\n{message}")
-        await update.message.reply_text(message)
+        if df_arbitrage.empty:
+            await update.message.reply_text("No arbitrage opportunities found above threshold. 📉")
+        else:
+            message = "⚡ Arbitrage Opportunities Found! 📈\n\n"
+            for _, row in df_arbitrage.iterrows():
+                message += (
+                    f"💸 Token: {row['token']}\n"
+                    f"💰 Buy: {row['buy_exchange']} @ {row['buy_price']:.6f} USDT\n"
+                    f"💰 Sell: {row['sell_exchange']} @ {row['sell_price']:.6f} USDT\n"
+                    f"📈 Price Diff: {row['price_diff_pct']:.2f}%\n"
+                    f"💵 Profit/$1000: {row['profit_per_1000_usd']:.2f} USDT\n\n"
+                )
+            logging.info(f"Sending Telegram message:\n{message}")
+            await update.message.reply_text(message)
+    except Exception as e:
+        await update.message.reply_text(f"Error fetching data from API: {e}")
 
 
 async def log_chat_id(update: Update, context):
@@ -186,53 +187,17 @@ def send_error_alert(error_msg):
         logging.error(f"Failed to send error alert: {e}")
 
 
-def run_bot_dynamic(top_tokens, top_exchanges, interval_sec=120, min_profit_pct=0.5, refresh_interval_loops=60):
-    """
-    Tracks top traded tokens across multiple exchanges and detects arbitrage.
-    Prices are taken only from USDT pairs for consistency.
-    """
-    global running, latest_scan_data
-    logging.info(
-        f"Tracking {len(top_tokens)} tokens on {len(top_exchanges)} exchanges...")
-
-    loop_count = 0
+def run_bot_dynamic(interval_sec=120):
+    """Updated loop to query FastAPI instead of fetching data."""
+    global running
     while running:
-        if loop_count % refresh_interval_loops == 0:
-            logging.info("Refreshing top tokens and exchanges...")
-            top_tokens = get_top_tokens(len(top_tokens))
-            top_exchanges = get_exchanges(len(top_exchanges))
+        try:
+            response = requests.get(f"{API_BASE_URL}/arbitrage")
+            response.raise_for_status()
+            data = response.json()
+            df_arbitrage = pd.DataFrame(data) if data and isinstance(
+                data, list) else pd.DataFrame()
 
-        all_data = []
-        for ex in top_exchanges:
-            tickers = get_all_tickers(ex["id"])
-            for ticker in tickers:
-                base = ticker.get("base", "").upper()
-                target = ticker.get("target", "").upper()
-                if base not in top_tokens or target != "USDT":
-                    continue
-                last_price = float(ticker.get("last", 0) or 0)
-                if last_price == 0:
-                    continue
-                all_data.append({
-                    "exchange": ex["id"],
-                    "token": base,
-                    "last_price": last_price,
-                    "last_vol": float(ticker.get("volume", 0) or 0),
-                    "spread": float(ticker.get("bid_ask_spread_percentage", 0) or 0),
-                    "trade_time": convert_to_local_tz(ticker.get("last_traded_at"))
-                })
-
-        df_all = pd.DataFrame(all_data)
-        # Cache the latest scan data
-        latest_scan_data["df_all"] = df_all
-        latest_scan_data["timestamp"] = time.time()
-
-        if df_all.empty:
-            logging.info("No tickers found this round.")
-        else:
-            display_agg(df_all)
-            df_arbitrage = detect_arbitrage(
-                df_all, min_profit_pct=min_profit_pct)
             if not df_arbitrage.empty:
                 message = "⚡ Arbitrage Opportunities Found! 📈\n\n"
                 for _, row in df_arbitrage.iterrows():
@@ -245,23 +210,23 @@ def run_bot_dynamic(top_tokens, top_exchanges, interval_sec=120, min_profit_pct=
                     )
                 logging.info(f"Sending Telegram message:\n{message}")
                 send_telegram_message(message)
+        except Exception as e:
+            logging.error(f"Failed to fetch from API: {e}")
+            send_error_alert(str(e))
 
         logging.info(f"Waiting {interval_sec} seconds before next update...")
         time.sleep(interval_sec)
-        loop_count += 1
 
-    logging.info("Arbitrage scan stopped via /stop command.")
+    logging.info("Arbitrage alert loop stopped via /stop command.")
 
 
-def start_telegram_bot(top_tokens, top_exchanges):
+def start_telegram_bot():
     """Start Telegram bot to handle commands."""
     if not TELEGRAM_BOT_TOKEN:
         logging.error(
             "TELEGRAM_BOT_TOKEN not set. Telegram bot will not start.")
         return
     app = Application.builder().token(TELEGRAM_BOT_TOKEN).build()
-    app.bot_data["top_tokens"] = top_tokens
-    app.bot_data["top_exchanges"] = top_exchanges
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("subscribe", subscribe))
     app.add_handler(CommandHandler("unsubscribe", unsubscribe))
