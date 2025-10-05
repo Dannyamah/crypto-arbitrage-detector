@@ -43,7 +43,7 @@ with st.sidebar:
     """)
 
     st.header("Links")
-    st.link_button("Telegram Bot", "https://t.me/@arb_spotter_bot")
+    st.link_button("Telegram Bot", "https://t.me/arb_spotter_bot")
     st.link_button("My X (Twitter)", "https://x.com/danny_4reel")
 
 # Progress indicator while waiting for data

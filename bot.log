@@ -463,3 +463,58 @@ telegram.error.NetworkError: httpx.ConnectError: [Errno 11001] getaddrinfo faile
 8         XVG       pionex    0.008163             mxc    0.008221            0.71                 7.11
 9  JELLYJELLY         gate    0.101816           azbit    0.103810            1.96                19.58
 2025-10-04 00:48:22,441 - INFO - Scan complete. Waiting 120 seconds...
+2025-10-05 14:16:45,057 - INFO - Starting background arbitrage scan...
+2025-10-05 14:16:48,521 - INFO - Refreshing top tokens and exchanges...
+2025-10-05 14:16:52,984 - INFO - Loaded 2 subscriptions.
+2025-10-05 14:16:55,047 - INFO - Waiting 120 seconds before next update...
+2025-10-05 14:16:58,090 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getMe "HTTP/1.1 200 OK"
+2025-10-05 14:16:58,278 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/deleteWebhook "HTTP/1.1 200 OK"
+2025-10-05 14:16:58,278 - INFO - Application started
+2025-10-05 14:17:09,212 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-05 14:17:09,978 - INFO - 
+--- Aggregated Exchange Stats ---
+         exchange  last_price_mean  last_vol_mean  spread_mean  num_trades
+0           azbit          5704.75   1.807700e+09         0.02          22
+1         binance          4612.03   1.981822e+11         0.03          55
+2         bitmart          3474.96   4.287299e+09         0.17          37
+3      bybit_spot          2397.33   3.210366e+10         0.03          56
+4           coinw          2563.97   3.424940e+10         0.09          51
+5            gate          2374.40   2.141002e+10         0.02          55
+6  hotcoin_global          3107.89   4.055913e+10         0.13          42
+7          kucoin          2044.91   0.000000e+00         0.04          64
+8             mxc          4303.56   4.522965e+10         0.04          60
+9          pionex          6453.78   3.589013e+10         0.03          20
+2025-10-05 14:17:10,155 - INFO - 
+--- Arbitrage Opportunities ---
+    token buy_exchange  buy_price sell_exchange  sell_price  price_diff_pct  profit_per_1000_usd
+0     XPL      binance     0.8929    bybit_spot     0.89740            0.50                 5.04
+1     ZEC      binance   147.1600         coinw   147.94000            0.53                 5.30
+2    SOMI         gate     0.9187           mxc     0.92790            1.00                10.01
+3    MIRA          mxc     0.6065       bitmart     0.61152            0.83                 8.28
+4    CELO       pionex     0.4292          gate     0.43280            0.84                 8.39
+5     ZEN      binance    10.1020           mxc    10.17100            0.68                 6.83
+6   EIGEN         gate     1.8811           mxc     1.89310            0.64                 6.38
+7    WLFI          mxc     0.2014         coinw     0.20260            0.60                 5.96
+8     MNT        coinw     2.0932          gate     2.10680            0.65                 6.50
+9     XAN          mxc     0.1249          gate     0.12631            1.13                11.29
+10   STBL         gate     0.3157        kucoin     0.31730            0.51                 5.07
+2025-10-05 14:17:10,158 - INFO - Scan complete. Waiting 120 seconds...
+2025-10-05 14:17:20,179 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-05 14:17:30,341 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-05 14:17:41,786 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-05 14:17:51,982 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-05 14:18:02,185 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-05 14:18:03,434 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-05 14:18:04,093 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-10-05 14:18:07,835 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-05 14:18:07,839 - INFO - Saved 2 subscriptions.
+2025-10-05 14:18:08,098 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-10-05 14:18:18,063 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-05 14:18:28,228 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-05 14:18:32,901 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-05 14:18:35,811 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/sendMessage "HTTP/1.1 200 OK"
+2025-10-05 14:18:45,348 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-05 14:18:55,607 - INFO - HTTP Request: POST https://api.telegram.org/bot8426585443:AAEp5PO1jrC39ffwH9p4sXxInmRozc9SCCY/getUpdates "HTTP/1.1 200 OK"
+2025-10-05 14:18:57,891 - INFO - Telegram message sent to 706456243 successfully.
+2025-10-05 14:18:58,604 - INFO - Telegram message sent to 6551264734 successfully.
+2025-10-05 14:18:58,612 - INFO - Waiting 120 seconds before next update...
