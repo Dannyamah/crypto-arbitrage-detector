@@ -16,3 +16,4 @@ except Exception as e:
 
 # Run Telegram bot polling in the main thread
 start_telegram_bot()
+    
