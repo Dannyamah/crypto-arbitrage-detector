@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware  # Add this import
 import pandas as pd
 import threading
 import time
@@ -11,12 +12,23 @@ from utils import convert_to_local_tz, logging
 load_dotenv()
 
 app = FastAPI(title="Arbitrage API")
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    # "*" for dev; restrict in prod
+    allow_origins=["http://localhost:3000", "*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 latest_df_all = pd.DataFrame()
 latest_df_arbitrage = pd.DataFrame()
 latest_timestamp = None
 
 
-def background_scan(interval_sec=120, min_profit_pct=0.5, refresh_interval_loops=60):
+def background_scan(interval_sec=300, min_profit_pct=0.5, refresh_interval_loops=60):
     global latest_df_all, latest_df_arbitrage, latest_timestamp
     logging.info("Starting background arbitrage scan...")
     top_tokens = get_top_tokens(100)

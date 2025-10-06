@@ -6,13 +6,13 @@ from utils import logging
 
 load_dotenv()
 
-# Start Telegram bot in a separate thread
+# Run the dynamic loop in a thread
 try:
-    telegram_thread = threading.Thread(target=start_telegram_bot)
-    telegram_thread.daemon = True
-    telegram_thread.start()
+    dynamic_thread = threading.Thread(target=run_bot_dynamic, args=(300,))
+    dynamic_thread.daemon = True
+    dynamic_thread.start()
 except Exception as e:
-    logging.error(f"Failed to start Telegram bot: {e}")
+    logging.error(f"Failed to start dynamic loop: {e}")
 
-# Run main bot loop (now queries API)
-run_bot_dynamic(interval_sec=120)
+# Run Telegram bot polling in the main thread
+start_telegram_bot()

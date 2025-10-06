@@ -14,7 +14,8 @@ load_dotenv()
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 ADMIN_CHAT_ID = 706456243  # Your admin chat ID
-API_BASE_URL = "http://localhost:8000"  # Change to deployed URL
+# Updated to use env var
+API_BASE_URL = os.getenv("API_URL", "http://localhost:8000")
 
 # Global flag to control bot loop
 running = True
@@ -187,7 +188,7 @@ def send_error_alert(error_msg):
         logging.error(f"Failed to send error alert: {e}")
 
 
-def run_bot_dynamic(interval_sec=120):
+def run_bot_dynamic(interval_sec=300):
     """Updated loop to query FastAPI instead of fetching data."""
     global running
     while running:
