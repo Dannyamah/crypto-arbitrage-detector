@@ -6,7 +6,7 @@ from utils import convert_to_local_tz, logging
 import requests
 import asyncio
 from telegram.ext import Application, CommandHandler
-from telegram import Update
+from telegram import Update, BotCommand
 from dotenv import load_dotenv
 import os
 
@@ -221,6 +221,27 @@ def run_bot_dynamic(interval_sec=300):
     logging.info("Arbitrage alert loop stopped via /stop command.")
 
 
+def set_bot_commands(app):
+    """Set bot commands for users and admin."""
+    user_commands = [
+        BotCommand("start", "Show welcome message"),
+        BotCommand("subscribe", "Subscribe to arbitrage alerts"),
+        BotCommand("unsubscribe", "Unsubscribe from alerts"),
+        BotCommand("scan_opportunities", "Scan for arbitrage opportunities"),
+        BotCommand("status", "Show bot status"),
+    ]
+    admin_commands = user_commands + [
+        BotCommand("stop", "Stop continuous scan (admin)"),
+        BotCommand("restart", "Restart continuous scan (admin)"),
+        BotCommand("getid", "Show your chat ID (admin/debug)"),
+    ]
+    # Set default commands for all users
+    app.bot.set_my_commands(user_commands)
+    # Set admin commands for admin (using scope)
+    from telegram import BotCommandScopeChat
+    app.bot.set_my_commands(admin_commands, scope=BotCommandScopeChat(chat_id=ADMIN_CHAT_ID))
+
+
 def start_telegram_bot():
     """Start Telegram bot to handle commands."""
     if not TELEGRAM_BOT_TOKEN:
@@ -236,6 +257,9 @@ def start_telegram_bot():
     app.add_handler(CommandHandler("restart", restart))
     app.add_handler(CommandHandler("status", status))
     app.add_handler(CommandHandler("getid", log_chat_id))  # Debug chat ID
+
+    set_bot_commands(app)  # <-- Add this line
+
     app.run_polling()
 
 
