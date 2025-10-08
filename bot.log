@@ -8403,3 +8403,60 @@ task: <Task pending name='Updater:start_polling:polling_task' coro=<network_retr
 2025-10-06 16:55:23,093 - INFO - 1 change detected
 2025-10-06 16:55:23,506 - INFO - 1 change detected
 2025-10-06 16:55:23,908 - INFO - 1 change detected
+2025-10-08 19:34:34,483 - INFO - Starting background arbitrage scan...
+2025-10-08 19:34:34,571 - INFO - Will watch for changes in these directories: ['C:\\Users\\user\\Desktop\\Python\\Arbitrage Bot']
+2025-10-08 19:34:34,571 - INFO - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-10-08 19:34:34,582 - INFO - Started reloader process [10384] using WatchFiles
+2025-10-08 19:34:36,354 - ERROR - API request failed: 401 Client Error: Unauthorized for url: https://pro-api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=volume_desc&per_page=100&page=1
+2025-10-08 19:34:38,004 - INFO - Starting background arbitrage scan...
+2025-10-08 19:34:38,028 - INFO - Started server process [8420]
+2025-10-08 19:34:38,028 - INFO - Waiting for application startup.
+2025-10-08 19:34:38,035 - INFO - Application startup complete.
+2025-10-08 19:34:38,183 - ERROR - API request failed: 401 Client Error: Unauthorized for url: https://pro-api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=volume_desc&per_page=100&page=1
+2025-10-08 19:34:38,728 - ERROR - API request failed: 401 Client Error: Unauthorized for url: https://pro-api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=volume_desc&per_page=100&page=1
+2025-10-08 19:34:40,348 - ERROR - API request failed: 401 Client Error: Unauthorized for url: https://pro-api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=volume_desc&per_page=100&page=1
+2025-10-08 19:34:40,798 - ERROR - API request failed: 401 Client Error: Unauthorized for url: https://pro-api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=volume_desc&per_page=100&page=1
+2025-10-08 19:34:42,971 - ERROR - API request failed: 401 Client Error: Unauthorized for url: https://pro-api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=volume_desc&per_page=100&page=1
+2025-10-08 19:34:45,469 - ERROR - API request failed: 401 Client Error: Unauthorized for url: https://pro-api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=volume_desc&per_page=100&page=1
+2025-10-08 19:34:47,570 - ERROR - API request failed: 401 Client Error: Unauthorized for url: https://pro-api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=volume_desc&per_page=100&page=1
+2025-10-08 19:34:54,105 - ERROR - API request failed: 401 Client Error: Unauthorized for url: https://pro-api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=volume_desc&per_page=100&page=1
+2025-10-08 19:34:56,305 - ERROR - API request failed: 401 Client Error: Unauthorized for url: https://pro-api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=volume_desc&per_page=100&page=1
+2025-10-08 19:36:44,771 - INFO - Shutting down
+2025-10-08 19:36:44,873 - INFO - Waiting for application shutdown.
+2025-10-08 19:36:44,875 - INFO - Application shutdown complete.
+2025-10-08 19:36:44,879 - INFO - Finished server process [8420]
+2025-10-08 19:36:45,144 - INFO - Stopping reloader process [10384]
+2025-10-08 19:45:44,991 - INFO - Starting background arbitrage scan...
+2025-10-08 19:45:45,025 - INFO - Will watch for changes in these directories: ['C:\\Users\\user\\Desktop\\Python\\Arbitrage Bot']
+2025-10-08 19:45:45,033 - INFO - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-10-08 19:45:45,035 - INFO - Started reloader process [24564] using WatchFiles
+2025-10-08 19:45:45,499 - INFO - 1 change detected
+2025-10-08 19:45:45,905 - INFO - 1 change detected
+2025-10-08 19:45:46,314 - INFO - 1 change detected
+2025-10-08 19:45:46,728 - INFO - 1 change detected
+2025-10-08 19:45:47,072 - INFO - Starting background arbitrage scan...
+2025-10-08 19:45:47,084 - INFO - Started server process [24128]
+2025-10-08 19:45:47,086 - INFO - Waiting for application startup.
+2025-10-08 19:45:47,088 - INFO - Application startup complete.
+2025-10-08 19:45:47,094 - INFO - 1 change detected
+2025-10-08 19:45:47,457 - INFO - Refreshing top tokens and exchanges...
+2025-10-08 19:45:47,496 - INFO - 1 change detected
+2025-10-08 19:45:47,908 - INFO - 1 change detected
+2025-10-08 19:45:48,291 - INFO - Refreshing top tokens and exchanges...
+2025-10-08 19:45:48,361 - INFO - 1 change detected
+2025-10-08 19:45:48,767 - INFO - 1 change detected
+2025-10-08 19:45:49,180 - INFO - 1 change detected
+2025-10-08 19:45:49,542 - INFO - 1 change detected
+2025-10-08 19:45:49,955 - INFO - 1 change detected
+2025-10-08 19:45:50,366 - INFO - 1 change detected
+2025-10-08 19:45:50,769 - INFO - 1 change detected
+2025-10-08 19:45:51,182 - INFO - 1 change detected
+2025-10-08 19:45:51,597 - INFO - 1 change detected
+2025-10-08 19:45:51,958 - INFO - 1 change detected
+2025-10-08 19:45:52,365 - INFO - 1 change detected
+2025-10-08 19:45:52,781 - INFO - 1 change detected
+2025-10-08 19:45:52,882 - INFO - Shutting down
+2025-10-08 19:45:52,982 - INFO - Waiting for application shutdown.
+2025-10-08 19:45:52,985 - INFO - Application shutdown complete.
+2025-10-08 19:45:52,991 - INFO - Finished server process [24128]
+2025-10-08 19:45:53,218 - INFO - Stopping reloader process [24564]

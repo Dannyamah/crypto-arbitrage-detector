@@ -11,7 +11,7 @@ COINGECKO_API = os.getenv("COINGECKO_API")
 coingecko_url = "https://pro-api.coingecko.com/api/v3"
 headers = {
     "accept": "application/json",
-    "x-cg-demo-api-key": COINGECKO_API
+    "x-cg-pro-api-key": COINGECKO_API
 }
 
 CACHE_FILE = "cache.json"
