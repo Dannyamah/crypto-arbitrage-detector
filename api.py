@@ -8,7 +8,7 @@ from utils import logging
 
 load_dotenv()
 COINGECKO_API = os.getenv("COINGECKO_API")
-coingecko_url = "https://api.coingecko.com/api/v3"
+coingecko_url = "https://pro-api.coingecko.com/api/v3"
 headers = {
     "accept": "application/json",
     "x-cg-demo-api-key": COINGECKO_API
