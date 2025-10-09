@@ -1,12 +1,11 @@
-# Crypto Arbitrage Detector (ArbSpotter)
+# Crypto Arbitrage Detector 
 A real-time tool to detect arbitrage opportunities across crypto exchanges using CoinGecko API.
-It scans prices for top tokens (USDT pairs), computes spreads (>0.5%), sends Telegram alerts, and visualizes data in a React dashboard.
+It scans prices for top tokens (USDT pairs), computes spreads (>0.5%) and sends Telegram alerts.
 
 ## Features
 - Backend: Fetches and aggregates data, detects opps in background loop.
 - Telegram Bot: Commands for subscription, manual scans, alerts.
-- Frontend: React dashboard with tables, metrics, profit calculator, search/sort, dark mode.
-- Deployment-ready on Railway (API, bot, frontend as separate services).
+- Deployment-ready on Railway (API and bot as separate services).
 
 ## Prerequisites
 - Python 3.10+ (with pip).
@@ -41,17 +40,9 @@ It scans prices for top tokens (USDT pairs), computes spreads (>0.5%), sends Tel
        }
        ```
 
-3. **Frontend Setup** (in frontend folder):
-   - Install deps: `npm install`
-   - Create `.env`:
-     ```
-     REACT_APP_API_URL=http://localhost:8000
-     ```
-
 ## Running Locally
 1. **Start Backend API** (in backend root): `fastapi dev server.py` (runs on http://localhost:8000). Test: Visit /arbitrage.
 2. **Start Telegram Bot** (in backend root, API must run): `python main.py`. Interact via Telegram (/start, /subscribe, etc.).
-3. **Start Frontend** (in frontend root): `npm start` (runs on http://localhost:3000). Dashboard fetches from local API.
 
 ## Configuration Notes
 - Intervals: Backend/bot scan every 300s (5 min)—adjust in server.py/bot.py/main.py.
